@@ -149,6 +149,8 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
+
+
 // Add language switching functionality
 const langSwitcher = document.getElementById('lang-switcher');
 const langElements = document.querySelectorAll('[data-lang-key]');
