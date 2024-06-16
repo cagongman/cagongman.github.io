@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       const projectFile = this.getAttribute("data-project");
       // Fetch the project details
-      fetch(`./portfolio_contents/${projectFile}`)
+      fetch(`../../portfolio_contents/${projectFile}`)
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok');
