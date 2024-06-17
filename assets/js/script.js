@@ -125,7 +125,6 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 
-
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
@@ -147,46 +146,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  const projectItems = document.querySelectorAll(".project-item");
-  const projectList = document.querySelector(".project-lists");
-  const projectContent = document.querySelector(".project-content");
-  const projectDetails = document.getElementById("project-details");
-  const backButton = document.querySelector(".back-button");
-
-  projectItems.forEach(item => {
-    item.addEventListener("click", function(e) {
-      e.preventDefault();
-
-      // projectList.style.display = "none";
-      // projectContent.style.display = "block";
-
-      const projectFile = this.getAttribute("data-project");
-      // Fetch the project details
-      fetch(`../../portfolio_contents/${projectFile}`)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Network response was not ok');
-          }
-          return response.text();
-        })
-        .then(data => {
-          projectDetails.innerHTML = data;
-          projectList.style.display = "none";
-          projectContent.style.display = "block";
-        })
-        .catch(error => console.error('Error loading project file:', error));
-    });
-  });
-
-  backButton.addEventListener("click", function() {
-    projectList.style.display = "block";
-    projectContent.style.display = "none";
-  });
-});
-
 
 
 
