@@ -148,6 +148,59 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const projectItems = document.querySelectorAll(".project-item");
+  const projectContents = document.querySelectorAll(".project-content");
+  const backButton = document.querySelectorAll(".back-button");
+  const projectList = document.querySelector(".project-overview");
+  const navbarLinks = document.querySelectorAll("[data-nav-link]");
+  const filterBtns = document.querySelectorAll("[data-filter-btn]");
+
+  // Show the project list and hide all project contents
+  function showProjectList() {
+    projectList.style.display = "block";
+    projectContents.forEach(content => {
+      content.style.display = "none";
+    });
+  }
+
+  // Event listener for project items
+  projectItems.forEach(item => {
+    item.addEventListener("click", function(e) {
+      e.preventDefault();
+      projectList.style.display = "none";
+      const projectContentId = this.getAttribute("project-content");
+      const projectContent = document.querySelector(`.${projectContentId}`);
+      projectContents.forEach(content => {
+        content.style.display = "none";
+      });
+      projectContent.style.display = "block";
+    });
+  });
+
+  // Event listener for back buttons
+  backButton.forEach(button => {
+    button.addEventListener("click", function() {
+      showProjectList();
+    });
+  });
+
+  // Event listener for navbar links
+  navbarLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      showProjectList();
+    });
+  });
+
+  // Event listener for filter buttons
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", function() {
+      showProjectList();
+    });
+  });
+});
+
+
 
 
 // Add language switching functionality
