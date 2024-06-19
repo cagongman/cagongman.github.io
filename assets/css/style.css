@@ -1940,7 +1940,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-.project-content h1, 
+.project-content h1 {
+  color: var(--orange-yellow-crayola);
+  font-family: var(--ff-poppins);
+  font-size: 2em;  /* Adjust the size as needed */
+  margin-bottom: 10px;
+}
+
 .project-content h2, 
 .project-content h3, 
 .project-content h4, 
