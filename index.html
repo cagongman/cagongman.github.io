@@ -837,7 +837,7 @@
             <br>
             <br>
 
-            <h3>담당한 기능</h3>
+            <h3>담당 역할</h3>
             <p>전체 개발</p>
             <br>
 
@@ -888,73 +888,56 @@
             <button class="back-button">Back</button>
           </div>
 
-          <!-- DentureAR content -->
+          <!-- WaveRemoteSensing content -->
           <div class="remoteSensing project-content" style="display: none;">
             <h1>Wave Remote Sensing</h1>
             <br>
             <h3>프로젝트 개요</h3>
             <p>
-              치아 일부가 없어 임플란트, 틀니 등 치아 보철물 시술이 필요한
-              환자에게 가상 치아 보철물을 적용하여 보철물 적용 후의 모습을
-              실시간으로 확인할 수 있는 Android 앱을 개발하였습니다.
+              방파제에 부딪치는 파도의 높이를 자동으로 측정하기 위해 실제 강릉 주문진 방파제의 3D object를 통해 height 값을 추출하는 작업을 진행하였습니다.
             </p>
             <br>
 
             <h3>사용 기술 및 라이브러리</h3>
             <span class="skill-type">C#</span>
-            <span class="skill-type">C++</span>
+            <span class="skill-type">Python</span>
             <span class="skill-type">Unity3D</span>
-            <span class="skill-type">ARCore</span>
-            <span class="skill-type">OpenCV</span>
-            <span class="skill-type">Alglib</span>
+            <span class="skill-type">Jupyter Notebook</span>
+            <span class="skill-type">scipy</span>
+            <span class="skill-type">matplotlib</span>
+            <span class="skill-type">numpy</span>
             <br>
             <br>
 
-            <h3>담당한 기능</h3>
-            <p>전체 개발</p>
-            <br>
-
-
-            <!-- <p><strong>Github</strong></p>
-            <p><a href="https://github.com/cagongman/ARFitnessDog">check</a></p>
-            <br> -->
-
-            <h3><strong>실행 영상</strong></h3>
-            <p><a href="https://youtu.be/XYGIu1xj8DY">YouTube Link</a></p>
+            <h3>담당 역할</h3>
+            <p>방파제 높이 히트맵 생성</p>
             <br>
 
             <h2>상세 내용</h2>
             <ul>
                 <li>
-                  <h3><strong>치아 보철물 오브젝트 재정렬</strong></h3>
-                  <p><img src="assets/images/projects/DentureAR/denture1.png" alt="DentureAR"></p>
-                    <p>Object 파일을 처음 import할 시 보철물의 방향이 제각각이기 때문에</p>
-                    <p>Import 후에 보철물이 정면을 주시하도록 방향을 수정하는 작업이 필요했습니다.</p>
-                    <br>
-                </li>
-                <li>
-                  <h3><strong>Face mesh 생성</strong></h3>
-                  <p><img src="assets/images/projects/DentureAR/denture2.png" alt="DentureAR"></p>
-                  <p>ARCore에서 제공하는 Augmented Face API를 사용하여 환자의 얼굴을 인식한 후</p>
-                  <p>468개의 vertices를 가지는 Face mesh를 생성합니다.</p>
+                  <h3><strong>방파제 높이 값 추출</strong></h3>
+                  <p><img src="assets/images/projects/RemoteSensing/sensing1.png" width="600" alt="RemoteSensing"></p>
+                  <p><img src="assets/images/projects/RemoteSensing/sensing2.png" alt="RemoteSensing"></p>
+                  <p>Unity3D에서의 카메라 view에 나타나는 방파제 object의 위치와 촬영한 영상에서의 방파제 위치를 대략적으로 일치시킵니다.</p>
+                  <p>모든 픽셀좌표에 대해서 ray를 쏘아 방파제 object에 충돌한 3D 좌표의 y값(height)을 추출하여 영상과 같은 크기의 히트맵을 생성하였습니다.</p>
                   <br>
                 </li>
                 <li>
-                  <h3><strong>매칭 마커 선택</strong></h3>
-                  <p><img src="assets/images/projects/DentureAR/denture3.png" alt="DentureAR"></p>
-                  <p>Face mesh에 보철물 오브젝트를 적합한 위치에 매칭시키기 위해 각각에 대응되는 마커를 3개 이상 선택합니다.</p>
+                  <h3><strong>히트맵 1차 보간</strong></h3>
+                  <p><img src="assets/images/projects/RemoteSensing/sensing3.png" alt="RemoteSensing"></p>
+                  <p>Height map을 시각화해본 결과 ray casting에 실패한 부분들이 많았습니다.</p>
+                  <p>실패한 부분들을 채우고자 Scipy 라이브러리의 interpolate.griddata() 함수를 활용하여 결측치를 보간하였습니다.</p>
                   <br>
                 </li>
                 <li>
-                  <h3><strong>치아 보철물 위치 최적화</strong></h3>
-                  <p><img src="assets/images/projects/DentureAR/denture4.png" alt="DentureAR"></p>
-                  <p>Face mesh와 보철물 object에서 선택한 각각의 대응되는 마커들을 사용하여 보철물 오브젝트를 위치시킵니다.</p>
-                  <p>각각의 대응되는 마커 간의 거리가 최소가 되도록 보철물 오브젝트의 위치를 최적화시켰습니다.</p>
-                  <p>최적화방법으로는 Levenberg–Marquardt algorithm(Alglib)을 적용하였습니다.</p>
-                  <p>Face occluder material을 사용하여 치아와 잇몸 부분을 제외한 나머지부분에 대해서 오브젝트를 제거하였습니다.</p>
-                  <p>우측 하단의 조작버튼으로 위치와 각도를 미세하게 조정이 가능합니다.</p>
+                  <h3><strong>히트맵 2차 보간</strong></h3>
+                  <p><img src="assets/images/projects/RemoteSensing/sensing4.png" alt="RemoteSensing"></p>
+                  <p>1차 보간 후에도 아직 빈 곳이 너무 많아 확인해 본 결과 결측치가 아닌 매우 작은 값으로 잘못 채워져 있는 것을 확인했습니다.</p>
+                  <p>이상치를 제거한 후 다시 값을 보간하였습니다.</p>
                   <br>
                 </li>
+                <li>
             </ul>
             <br>
 
@@ -1070,7 +1053,7 @@
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
-                    <img src="./assets/images/projects/DentureAR/dentureAR_main.png" alt="Wave Remote Sensing" loading="lazy">
+                    <img src="./assets/images/projects/RemoteSensing/sensing_main.png" alt="Wave Remote Sensing" loading="lazy">
                   </figure>
                   <h3 class="project-title">Wave Remote Sensing</h3>
                   <p class="project-category">Unity</p>
