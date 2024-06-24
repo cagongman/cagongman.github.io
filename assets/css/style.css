@@ -1954,7 +1954,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .project-content h6 {
   color: var(--orange-yellow-crayola);
   font-family: var(--ff-poppins);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .project-content p {
@@ -1985,6 +1985,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   max-width: 100%;
   /* border-radius: 8px; */
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .back-button {
@@ -1995,7 +1996,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .skill-type {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-left: 5px;
   padding: 2px 8px;
   background-color: #f5f5f5;

@@ -817,7 +817,7 @@
 
           <!-- DentureAR content -->
           <div class="dentureAR project-content" style="display: none;">
-            <h1>AR Fitness Dog</h1>
+            <h1>DentureAR</h1>
             <br>
             <h3>프로젝트 개요</h3>
             <p>
@@ -828,19 +828,18 @@
             <br>
 
             <h3>사용 기술 및 라이브러리</h3>
-            <span class="skill-type">Unity</span>
-            <span class="skill-type">ARCore</span>
             <span class="skill-type">C#</span>
+            <span class="skill-type">C++</span>
+            <span class="skill-type">Unity3D</span>
+            <span class="skill-type">ARCore</span>
+            <span class="skill-type">OpenCV</span>
+            <span class="skill-type">Alglib</span>
             <br>
             <br>
 
             <h3>담당한 기능</h3>
-            <ul>
-                <li>
-                  <p>전체 개발</p>
-                  <br>
-                </li>
-            </ul>
+            <p>전체 개발</p>
+            <br>
 
 
             <!-- <p><strong>Github</strong></p>
@@ -870,16 +869,94 @@
                 <li>
                   <h3><strong>매칭 마커 선택</strong></h3>
                   <p><img src="assets/images/projects/DentureAR/denture3.png" alt="DentureAR"></p>
-                  <p>Face mesh에 보철물 오브젝트를 적합한 위치에 매칭시키기 위해</p>
-                  <p>각각에 대응되는 마커를 3개 이상 선택합니다.</p>
+                  <p>Face mesh에 보철물 오브젝트를 적합한 위치에 매칭시키기 위해 각각에 대응되는 마커를 3개 이상 선택합니다.</p>
                   <br>
                 </li>
-                <li><strong>기대 효과</strong>
-                    <ul>
-                        <li>여성 복지를 위해 운영되고 있지만 실 사용률이 낮은 생리대 자판기의 접근성을 높이고, 나아가 여성 청소년이 건강한 성인으로 자랄 수 있는 심리적 기반을 형성하는 데에 도움을 줄 수 있다.</li>
-                    </ul>
+                <li>
+                  <h3><strong>치아 보철물 위치 최적화</strong></h3>
+                  <p><img src="assets/images/projects/DentureAR/denture4.png" alt="DentureAR"></p>
+                  <p>Face mesh와 보철물 object에서 선택한 각각의 대응되는 마커들을 사용하여 보철물 오브젝트를 위치시킵니다.</p>
+                  <p>각각의 대응되는 마커 간의 거리가 최소가 되도록 보철물 오브젝트의 위치를 최적화시켰습니다.</p>
+                  <p>최적화방법으로는 Levenberg–Marquardt algorithm(Alglib)을 적용하였습니다.</p>
+                  <p>Face occluder material을 사용하여 치아와 잇몸 부분을 제외한 나머지부분에 대해서 오브젝트를 제거하였습니다.</p>
+                  <p>우측 하단의 조작버튼으로 위치와 각도를 미세하게 조정이 가능합니다.</p>
+                  <br>
                 </li>
             </ul>
+            <br>
+
+            <button class="back-button">Back</button>
+          </div>
+
+          <!-- DentureAR content -->
+          <div class="remoteSensing project-content" style="display: none;">
+            <h1>Wave Remote Sensing</h1>
+            <br>
+            <h3>프로젝트 개요</h3>
+            <p>
+              치아 일부가 없어 임플란트, 틀니 등 치아 보철물 시술이 필요한
+              환자에게 가상 치아 보철물을 적용하여 보철물 적용 후의 모습을
+              실시간으로 확인할 수 있는 Android 앱을 개발하였습니다.
+            </p>
+            <br>
+
+            <h3>사용 기술 및 라이브러리</h3>
+            <span class="skill-type">C#</span>
+            <span class="skill-type">C++</span>
+            <span class="skill-type">Unity3D</span>
+            <span class="skill-type">ARCore</span>
+            <span class="skill-type">OpenCV</span>
+            <span class="skill-type">Alglib</span>
+            <br>
+            <br>
+
+            <h3>담당한 기능</h3>
+            <p>전체 개발</p>
+            <br>
+
+
+            <!-- <p><strong>Github</strong></p>
+            <p><a href="https://github.com/cagongman/ARFitnessDog">check</a></p>
+            <br> -->
+
+            <h3><strong>실행 영상</strong></h3>
+            <p><a href="https://youtu.be/XYGIu1xj8DY">YouTube Link</a></p>
+            <br>
+
+            <h2>상세 내용</h2>
+            <ul>
+                <li>
+                  <h3><strong>치아 보철물 오브젝트 재정렬</strong></h3>
+                  <p><img src="assets/images/projects/DentureAR/denture1.png" alt="DentureAR"></p>
+                    <p>Object 파일을 처음 import할 시 보철물의 방향이 제각각이기 때문에</p>
+                    <p>Import 후에 보철물이 정면을 주시하도록 방향을 수정하는 작업이 필요했습니다.</p>
+                    <br>
+                </li>
+                <li>
+                  <h3><strong>Face mesh 생성</strong></h3>
+                  <p><img src="assets/images/projects/DentureAR/denture2.png" alt="DentureAR"></p>
+                  <p>ARCore에서 제공하는 Augmented Face API를 사용하여 환자의 얼굴을 인식한 후</p>
+                  <p>468개의 vertices를 가지는 Face mesh를 생성합니다.</p>
+                  <br>
+                </li>
+                <li>
+                  <h3><strong>매칭 마커 선택</strong></h3>
+                  <p><img src="assets/images/projects/DentureAR/denture3.png" alt="DentureAR"></p>
+                  <p>Face mesh에 보철물 오브젝트를 적합한 위치에 매칭시키기 위해 각각에 대응되는 마커를 3개 이상 선택합니다.</p>
+                  <br>
+                </li>
+                <li>
+                  <h3><strong>치아 보철물 위치 최적화</strong></h3>
+                  <p><img src="assets/images/projects/DentureAR/denture4.png" alt="DentureAR"></p>
+                  <p>Face mesh와 보철물 object에서 선택한 각각의 대응되는 마커들을 사용하여 보철물 오브젝트를 위치시킵니다.</p>
+                  <p>각각의 대응되는 마커 간의 거리가 최소가 되도록 보철물 오브젝트의 위치를 최적화시켰습니다.</p>
+                  <p>최적화방법으로는 Levenberg–Marquardt algorithm(Alglib)을 적용하였습니다.</p>
+                  <p>Face occluder material을 사용하여 치아와 잇몸 부분을 제외한 나머지부분에 대해서 오브젝트를 제거하였습니다.</p>
+                  <p>우측 하단의 조작버튼으로 위치와 각도를 미세하게 조정이 가능합니다.</p>
+                  <br>
+                </li>
+            </ul>
+            <br>
 
             <button class="back-button">Back</button>
           </div>
@@ -967,7 +1044,7 @@
                     </div>
                     <img src="./assets/images/project-1.jpg" alt="AR Project" loading="lazy">
                   </figure>
-                  <h3 class="project-title">AR Fitness Dog</h3>
+                  <h3 class="project-title">Rescue Request System</h3>
                   <p class="project-category">AR</p>
                 </a>
               </li>
@@ -979,10 +1056,24 @@
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
-                    <img src="./assets/images/project-1.jpg" alt="AR Project" loading="lazy">
+                    <img src="./assets/images/projects/DentureAR/dentureAR_main.png" alt="DentureAR" loading="lazy">
                   </figure>
-                  <h3 class="project-title">Denture AR</h3>
+                  <h3 class="project-title">DentureAR</h3>
                   <p class="project-category">AR</p>
+                </a>
+              </li>
+
+              <!-- Wave Remote Sensing -->
+              <li class="project-item active" data-filter-item data-category="unity" project-content="remoteSensing">
+                <a>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/projects/DentureAR/dentureAR_main.png" alt="Wave Remote Sensing" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Wave Remote Sensing</h3>
+                  <p class="project-category">Unity</p>
                 </a>
               </li>
             </ul>
