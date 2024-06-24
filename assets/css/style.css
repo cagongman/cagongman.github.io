@@ -1959,7 +1959,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .project-content p {
   color: var(--white-1);
-  font-size: var(--fs-4);
+  font-size: var(--fs-5);
   line-height: 1.5;
   margin-bottom: 10px;
 }
@@ -1976,14 +1976,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .project-content a {
-  color: var(--orange-yellow-crayola);
+  color: var(--white-1);
   font-weight: var(--fw-500);
   text-decoration: underline;
 }
 
 .project-content img {
   max-width: 100%;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   margin-top: 10px;
 }
 
@@ -1991,4 +1991,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--orange-yellow-crayola);
   font-family: var(--ff-poppins);
   margin-bottom: 10px;
+}
+
+.skill-type {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 2px 8px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #333;
 }
