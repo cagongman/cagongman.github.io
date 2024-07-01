@@ -264,12 +264,14 @@ const translations = {
     "intl-experience4-title": "China - Oxstand International School, ShenZhen",
     "intl-experience4-date": "Aug, 2014 – Jun, 2017",
     "intl-experience4-desc": "High school student",
-    "skills": "Technical Skills",
-    "skills1": "Programming Languages",
-    "skills1-desc": "C#, C++, Python, Swift",
-    "skills2": "Tools",
-    "skills2-desc": "Unity, Visual Studio, Xcode, Final Cut Pro",
-    "project" : "Project",
+   
+    "activity" : "activity",
+    "act_oreh" : "OREH",
+    "act_oreh_date" : "Jan, 2023 - Jun, 2023",
+    "act_oreh_text" : "업데이트 필요",
+
+    // publication
+    "publication" : "Publication"
   },
 
   ko: {
@@ -302,7 +304,8 @@ const translations = {
     "education3-title": "옥스탠드 국제학교, 선전, 중국",
     "education3-date": "2014년 8월 – 2017년 6월",
     "education3-desc": "고등학생",
-    "experience": "활동",
+
+    "experience": "경험",
     "experience1-title": "혼합현실 연구실, 한양대학교",
     "experience1-date": "2022년 7월 – 현재",
     "experience1-desc": "대학원생(석사과정)",
@@ -315,7 +318,8 @@ const translations = {
     "experience4-title": "LG 소프트 인도",
     "experience4-date": "2021년 1월 – 2021년 2월",
     "experience4-desc": "인턴 - webOS 개발 및 자세 감지 프로그램 작업.",
-    "international-experience": "해외 활동",
+
+    "international-experience": "해외 경험",
     "intl-experience1-title": "캐나다 - 캘거리 대학교",
     "intl-experience1-date": "2023년 9월 - 2024년 2월",
     "intl-experience1-desc": "방문 연구원",
@@ -328,12 +332,14 @@ const translations = {
     "intl-experience4-title": "중국 - 옥스탠드 국제학교, 선전",
     "intl-experience4-date": "2014년 8월 – 2017년 6월",
     "intl-experience4-desc": "고등학생",
-    "skills": "기술 스킬",
-    "skills1": "프로그래밍 언어",
-    "skills1-desc": "C#, C++, Python, Swift",
-    "skills2": "도구",
-    "skills2-desc": "Unity, Visual Studio, Xcode, Final Cut Pro",
-    "project" : "프로젝트",
+    
+    "activity" : "활동",
+    "act_oreh" : "OREH",
+    "act_oreh_date" : "2023년 1월 - 2023년 6월",
+    "act_oreh_text" : "‘황기환, 그의 귀환’ 야외방탈출 게임 개발자",
+
+    // publication
+    "publication" : "논문"
   }
 };
 

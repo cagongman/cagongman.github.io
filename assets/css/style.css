@@ -354,6 +354,14 @@ main {
   border-radius: 8px;
 }
 
+.info-content .mbti {
+  color: var(--white-1);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-300);
+  letter-spacing: -0.25px;
+  padding: 10px 16px;
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -750,11 +758,11 @@ main {
 
 .clients-item img {
   width: 100%;
-  filter: grayscale(1);
+  /* filter: grayscale(1); */
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+/* .clients-item img:hover { filter: grayscale(0); } */
 
 
 
