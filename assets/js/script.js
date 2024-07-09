@@ -232,43 +232,59 @@ const translations = {
     "education1-title": "Hanyang University, Seoul, South Korea",
     "education1-date": "Sep, 2022 – present",
     "education1-desc": "Master of Science in Computer Science, GPA: 4.06/4.5",
+
     "education2-title": "Kyungpook National University, Daegu, South Korea",
     "education2-date": "Mar, 2018 – Aug, 2022",
-    "education2-desc": "Bachelor of Science in Computer Science & Engineering, GPA: 3.56/4.5",
+    "education2-desc": "Bachelor of Science in Computer Science, GPA: 3.56/4.5",
+
     "education3-title": "Oxstand International School, ShenZhen, China",
     "education3-date": "Aug, 2014 – Jun, 2017",
     "education3-desc": "High school student",
+
     "experience": "Experience",
-    "experience1-title": "Mixed Reality Laboratory, Hanyang University",
+    "experience1-title": "Mixed Reality Laboratory - Hanyang University",
     "experience1-date": "Jul, 2022 – present",
     "experience1-desc": "Graduate student",
-    "experience2-title": "Image Processing and Analysis Laboratory, Kyungpook National University",
+    // OREH
+    "act_oreh" : "Lettre de Paris - OREH",
+    "act_oreh_date" : "Feb, 2023 - Jun, 2023",
+    "act_oreh_text" : "App developer",
+    // IPA Lab
+    "experience2-title": "Image Processing and Analysis Laboratory - Kyungpook National University",
     "experience2-date": "Jul, 2020 – Feb, 2022",
-    "experience2-desc": "Undergraduate Intern - Development of dental visualization using ARCore and Unity.",
-    "experience3-title": "Rovice, Unmanned Store Security Company",
+    "experience2-desc": "Undergraduate Researcher",
+    // Rovice
+    "experience3-title": "Unmanned Store Security Company - Rovice",
     "experience3-date": "Mar – May, 2021",
-    "experience3-desc": "Technician - Developed a human detection service and trained on Video Management Software (VMS).",
-    "experience4-title": "LG Soft India",
-    "experience4-date": "Jan – Feb, 2021",
-    "experience4-desc": "Intern - Worked on webOS development and posture detection programs.",
+    "experience3-desc": "Developer",
+
     "international-experience": "International Experience",
     "intl-experience1-title": "Canada - University of Calgary",
     "intl-experience1-date": "Sep, 2023 - Feb, 2024",
     "intl-experience1-desc": "Visiting scholar",
+
     "intl-experience2-title": "India - LG Soft India",
     "intl-experience2-date": "Jan, 2021 - Feb, 2021",
-    "intl-experience2-desc": "Winter internship",
+    "intl-experience2-desc": "Winter internship (online)",
+
     "intl-experience3-title": "Estonia - Tallinn University",
     "intl-experience3-date": "Jul, 2018 - Aug, 2018",
     "intl-experience3-desc": "Summer exchange student",
+
     "intl-experience4-title": "China - Oxstand International School, ShenZhen",
     "intl-experience4-date": "Aug, 2014 – Jun, 2017",
     "intl-experience4-desc": "High school student",
    
-    "activity" : "activity",
-    "act_oreh" : "OREH",
-    "act_oreh_date" : "Jan, 2023 - Jun, 2023",
-    "act_oreh_text" : "업데이트 필요",
+    "activity" : "Activity",
+    "act-lion-title": "Like Lion - Intercollegiate IT Club",
+    "act-lion-date": "2020 - 2021",
+    "act-lion-desc1": "New Member (2020)",
+    "act-lion-desc2": "Executive Member (Education Team, 2021)",
+
+    "act-kutc-title": "Kyungpook National University Tennis Club (KUTC)",
+    "act-kutc-date": "2018 - 2022",
+    "act-kutc-desc": "Executive Member (Head of Guidance, 2019)",
+    
 
     // publication
     "publication" : "Publication"
@@ -306,37 +322,48 @@ const translations = {
     "education3-desc": "고등학생",
 
     "experience": "경험",
-    "experience1-title": "혼합현실 연구실, 한양대학교",
+    "experience1-title": "혼합현실 연구실 - 한양대학교",
     "experience1-date": "2022년 7월 – 현재",
     "experience1-desc": "대학원생(석사과정)",
-    "experience2-title": "이미지 처리 및 분석 연구실, 경북대학교",
+    // OREH
+    "act_oreh" : "'황기환, 그의 귀환' 야외방탈출 게임 - OREH",
+    "act_oreh_date" : "2023년 2월 - 2023년 6월",
+    "act_oreh_text" : "앱 개발자",
+    // IPA
+    "experience2-title": "이미지 처리 및 분석 연구실 - 경북대학교",
     "experience2-date": "2020년 7월 – 2022년 2월",
-    "experience2-desc": "학부 인턴 - ARCore와 Unity를 사용한 치과 시각화 개발.",
-    "experience3-title": "로비스, 무인 매장 보안 전문",
+    "experience2-desc": "학부 연구생",
+    // Rovice
+    "experience3-title": "무인 매장 보안업체 - 로비스",
     "experience3-date": "2021년 3월 – 2021년 5월",
-    "experience3-desc": "기술자 - 인간 감지 서비스를 개발하고 비디오 관리 소프트웨어(VMS)에 대해 교육함.",
-    "experience4-title": "LG 소프트 인도",
-    "experience4-date": "2021년 1월 – 2021년 2월",
-    "experience4-desc": "인턴 - webOS 개발 및 자세 감지 프로그램 작업.",
+    "experience3-desc": "개발자",
 
     "international-experience": "해외 경험",
     "intl-experience1-title": "캐나다 - 캘거리 대학교",
     "intl-experience1-date": "2023년 9월 - 2024년 2월",
     "intl-experience1-desc": "방문 연구원",
+
     "intl-experience2-title": "인도 - LG 소프트 인도",
     "intl-experience2-date": "2021년 1월 - 2021년 2월",
-    "intl-experience2-desc": "겨울 인턴십",
+    "intl-experience2-desc": "겨울 인턴십(온라인)",
+
     "intl-experience3-title": "에스토니아 - 탈린 대학교",
     "intl-experience3-date": "2018년 7월 - 2018년 8월",
     "intl-experience3-desc": "여름 교환 학생",
+
     "intl-experience4-title": "중국 - 옥스탠드 국제학교, 선전",
     "intl-experience4-date": "2014년 8월 – 2017년 6월",
     "intl-experience4-desc": "고등학생",
     
     "activity" : "활동",
-    "act_oreh" : "OREH",
-    "act_oreh_date" : "2023년 1월 - 2023년 6월",
-    "act_oreh_text" : "‘황기환, 그의 귀환’ 야외방탈출 게임 개발자",
+    "act-lion-title" : "Like Lion - 대학연합 IT동아리",
+    "act-lion-date" : "2020 - 2021",
+    "act-lion-desc1" : "2020년 8기 아기사자(신입부원)",
+    "act-lion-desc2" : "2021년 9기 운영진(교육팀)",
+
+    "act-kutc-title" : "경북대학교 테니스 동아리(KUTC)",
+    "act-kutc-date" : "2018 - 2022",
+    "act-kutc-desc" : "2019년 운영진(지도부장)",
 
     // publication
     "publication" : "논문"

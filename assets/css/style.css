@@ -785,7 +785,7 @@ main {
 }
 
 .clients::-webkit-scrollbar-thumb {
-  background-color: yellow;
+  background-color: var(--orange-yellow-crayola);
   border-radius: 6px;
 }
 
@@ -2004,7 +2004,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .project-content h6 {
   color: var(--orange-yellow-crayola);
   font-family: var(--ff-poppins);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .project-content p {
@@ -2036,6 +2036,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   /* border-radius: 8px; */
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+.project-content-box {
+  margin-bottom: 20px; /* Space at the bottom */
+  background: var(--border-gradient-onyx);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-2);
+  z-index: 1;
 }
 
 .back-button {
