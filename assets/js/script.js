@@ -220,7 +220,7 @@ const translations = {
     "location_content": "Seoul, South Korea",
     "about": "About",
     "resume": "Resume",
-    "portfolio": "Portfolio",
+    "portfolio": "Project",
     "blog": "Blog",
     "publication" : "Publication",
     "about_title": "About me",

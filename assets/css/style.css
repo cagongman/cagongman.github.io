@@ -734,13 +734,13 @@ main {
  * #clients 
  */
 
-.clients { margin-bottom: 15px; }
+/* .clients { margin-bottom: 15px; }
 
 .clients-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
+  gap: 10px;
   margin: 0 -15px;
   padding: 25px;
   padding-bottom: 25px;
@@ -749,16 +749,54 @@ main {
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
   scroll-padding-inline: 25px;
+} */
+
+/* .clients-item {
+  min-width: 50%;
+  scroll-snap-align: start;
+} */
+
+.clients-section {
+  margin-bottom: 20px; /* Add some space between sections */
+}
+
+.clients {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-top: 10px; /* Add padding to create space between title and images */
+}
+
+.clients-list {
+  display: flex;
+  gap: 0px; /* Reduce the gap between images */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
 .clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
+  flex: 0 0 calc(25% - 10px); /* Ensure four images fit in the container */
+  margin-right: 5px;
+  list-style: none; /* Remove default list styles */
 }
+
+/* Scrollbar styling */
+.clients::-webkit-scrollbar {
+  height: 7px;
+}
+
+.clients::-webkit-scrollbar-thumb {
+  background-color: yellow;
+  border-radius: 6px;
+}
+
+.clients::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
 
 .clients-item img {
   width: 100%;
-  /* filter: grayscale(1); */
   transition: var(--transition-1);
 }
 
@@ -1879,6 +1917,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .social-list { justify-content: center; }
 
+  .center-text {
+    text-align: center;
+    width: 100%;
+}
 
 
   /**
