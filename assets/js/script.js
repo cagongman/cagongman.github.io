@@ -254,7 +254,7 @@ const translations = {
     "experience2-date": "Jul, 2020 – Feb, 2022",
     "experience2-desc": "Undergraduate Researcher",
     // Rovice
-    "experience3-title": "Unmanned Store Security Company - Rovice",
+    "experience3-title": "Automation System Company - Rovice",
     "experience3-date": "Mar – May, 2021",
     "experience3-desc": "Developer",
 
@@ -334,7 +334,7 @@ const translations = {
     "experience2-date": "2020년 7월 – 2022년 2월",
     "experience2-desc": "학부 연구생",
     // Rovice
-    "experience3-title": "무인 매장 보안업체 - 로비스",
+    "experience3-title": "무인화 시스템 전문회사 - 로비스",
     "experience3-date": "2021년 3월 – 2021년 5월",
     "experience3-desc": "개발자",
 

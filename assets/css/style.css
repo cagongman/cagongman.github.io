@@ -1998,7 +1998,18 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 .project-content h2, 
-.project-content h3, 
+.project-content h3 {
+  color: var(--orange-yellow-crayola);
+  font-family: var(--ff-poppins);
+  margin-bottom: 5px;
+} 
+hr {
+  border: 0;
+  height: 1px; /* 선의 두께 */
+  background-color: var(--orange-yellow-crayola);
+  margin-bottom: 20px; /* 선과 다음 문단 사이의 간격 */
+}
+
 .project-content h4, 
 .project-content h5, 
 .project-content h6 {
@@ -2011,7 +2022,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--white-1);
   font-size: var(--fs-5);
   line-height: 1.5;
-  margin-bottom: 10px;
+  /* margin-bottom: 5px; */
 }
 
 .project-content ul {
