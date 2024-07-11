@@ -1937,45 +1937,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
-  .papers {
-    margin-top: 2rem;
-    color: var(--light-gray); 
-  }
-
-  .papers h3 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      color: var(--white-2); 
-  }
-
-  .papers ul {
-      list-style-type: none;
-      padding: 0;
-  }
-
-  .papers li {
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-      line-height: 1.5;
-      color:var(--light-gray);
-  }
-
-  .publication-type {
-      display: inline-block;
-      margin-left: 10px;
-      padding: 2px 8px;
-      background-color: #f5f5f5;
-      border-radius: 4px;
-      font-size: 0.875rem;
-      color: #333;
-  }
-
-  .conference-name, .journal-name, .degree-name {
-      display: inline-block;
-      margin-left: 10px;
-      font-size: 0.875rem;
-      color: var(--light-gray);
-  }
+  
 }
 
 
@@ -2003,6 +1965,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-family: var(--ff-poppins);
   margin-bottom: 5px;
 } 
+
 hr {
   border: 0;
   height: 1px; /* 선의 두께 */
@@ -2073,4 +2036,55 @@ hr {
   border-radius: 4px;
   font-size: 0.875rem;
   color: #333;
+}
+
+
+/* Publication */
+.papers {
+  margin-top: 2rem;
+  color: var(--light-gray); 
+}
+
+.papers h1 {
+  color: var(--orange-yellow-crayola);
+  font-family: var(--ff-poppins);
+  font-size: 2em;  /* Adjust the size as needed */
+  margin-bottom: 10px;
+}
+
+.papers h2, 
+.papers h3 {
+  color: var(--orange-yellow-crayola);
+  font-family: var(--ff-poppins);
+  margin-bottom: 5px;
+} 
+
+
+.papers ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.papers li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color:var(--light-gray);
+}
+
+.publication-type {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 2px 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    color: #333;
+}
+
+.conference-name, .journal-name, .degree-name {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.875rem;
+    color: var(--light-gray);
 }
