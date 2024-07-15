@@ -1942,6 +1942,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 /* Project content styles */
+.centered-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* 부모 요소의 높이를 기준으로 조정 */
+  width: 100%; /* 부모 요소의 너비를 기준으로 조정 */
+}
+
+.centered-image {
+  max-width: 100%; /* 이미지가 부모 요소를 넘지 않도록 조정 */
+  max-height: 100%; /* 이미지가 부모 요소를 넘지 않도록 조정 */
+}
+
 .project-content {
   padding: 20px;
   background-color: var(--eerie-black-1);
