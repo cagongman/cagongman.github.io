@@ -630,8 +630,9 @@
               <br>
 
               <h3>첨부자료 링크</h3>
-              <p><a href="#">실행 영상1</a></p>
-              <p><a href="#">실행 영상2</a></p>
+              <p><a href="#">Github</a></p>
+              <p><a href="#">IVD 실행영상</a></p>
+              <p><a href="#">CVD 실행영상</a></p>
             </div>
             <br>
 
@@ -682,6 +683,10 @@
             <br><br>
 
             <h3>따라쟁이 가상 강아지 (IVD 모드)</h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/ARFitnessDog/fitnessdog_ivd.png" alt="ARFitnessDog">
+            </div>
+
             <p>먼저 사용자의 운동 동작을 인식하기 위해 Meta Quest 3에서 제공하는 IOBT(Inside-Out Body Tracking) 기술과 Generative Leg 기술을 활용했습니다. 이를 통해 사용자의 전신의 3D 관절 좌표를 얻을 수 있습니다.</p>
             <p>추출한 3D 관절 좌표를 통해 아래와 같은 조건을 세워 각 동작을 인식했습니다.</p>
             <ul>
@@ -724,8 +729,108 @@
 
           <!-- AccidentSimulation content -->
           <div class="accidentSimulation project-content" style="display: none;">
-            <button class="back-button">Back to Projects</button>
-            <p>hihi</p>
+            <h1>Accident Detection</h1>
+            <br>
+            <h2>프로젝트 개요</h2>
+            <hr>
+            <p>
+              건설 현장에서 혼자 작업하던 작업자가 사고를 당하면 즉각적인 구조나 응급처치가 어려운 경우가 많습니다. 
+            </p>
+            <p>
+              이런 문제를 해결하기 위해, 본 프로젝트에서는 가상 에이전트를 사용해 추락, 충돌 사고를 재현하고, 사고 시 발생하는 머리 움직임 데이터를 수집했습니다. 
+            </p>
+            <p>
+              이 데이터를 바탕으로 사고를 자동으로 감지하는 인공지능 모델을 개발했습니다.
+            </p>
+            <p>
+              
+            </p>
+            <br>
+
+            <div class="project-content-box">
+              <h3>담당 역할</h3>
+              <p>- 전체 개발</p>
+              <br>
+
+              <h3>시기 및 기간</h3>
+              <p>- 한양대학교 혼합현실 연구실(석사과정)</p>
+              <p>- 2023년 12월 ~ 2024년 5월</p>
+              <br>
+
+              <h3>사용 기술 및 라이브러리</h3>
+              <span class="skill-type">C#</span>
+              <span class="skill-type">Python</span>
+              <span class="skill-type">Pytorch</span>
+              <span class="skill-type">Barracuda</span>
+              <span class="skill-type">MLAgent</span>
+              <span class="skill-type">Jupyter Notebook</span>
+              <span class="skill-type">Visual Studio</span>
+              <span class="skill-type">Unity3D</span>
+            </div>
+            <br>
+
+            <h2>상세 내용</h2>
+            <hr>
+            <h3><strong>에이전트 설정</strong></h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/AccidentDetection/accident_ragdoll.png" width="700" class="centered-image" alt="ARFitnessDog">
+            </div>
+            <p>충돌 및 추락 상황을 연출하기 위해서 유니티 게임엔진의 Ragdoll physics 기능을 사용하였습니다.</p>
+            <p>기본(Idle) 상태의 에이전트에 충돌을 감지하는 콜라이더를 설정하여 콜라이더에 충돌 객체가 감지될 경우 기본 상태 에이전트의 각 관절의 위치와 회전 값을 ragdoll physics가 적용된 에이전트에 동일하게 적용한 후 교체시켰습니다.</p>
+            <br><br>
+
+            <h3>사고 시뮬레이션</h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/AccidentDetection/accident_object.png" alt="ARFitnessDog">
+            </div>
+
+            <p>본 프로젝트에서는 자재 낙하로 인한 충돌 사고와 고층 높이에서 떨어지는 추락 사고를 구현하였습니다.</p>
+            <p>충돌 사고의 경우 충돌 객체 (벽돌, 파이프, 철 기둥, 철망 펜스) 4 가지를 사용하였습니다. 각각의 초기 무개(5kg, 40kg, 60kg, 15kg)를 설정한 후 캐릭터의 일정 높이 위에서 낙하 시켰습니다.</p>
+            <p>추락 사고의 경우 에이전트를 임시 발판과 사다리 위에 위치시킨 후 흉부 쪽에 AddForce() 함수를 사용하여 impulse 모드로 힘을 가해 떨어뜨렸습니다.</p>
+            <br><br>
+
+            <h3>데이터 생성</h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/ARFitnessDog/fitnessdog1.png" width="700" class="centered-image" alt="ARFitnessDog">
+            </div>
+
+            <p>학습 데이터를 생성하기 위해 매 시뮬레이션에서 특정 매개변수를 무작위로 설정하여 여러 시나리오 진행하였습니다.</p>
+            <ul>
+              <li><strong>충돌 객체</strong>: 충돌 객체의 높이와 무게는 기존 값에 1.0에서 2.0 사이의 무작위 값을 곱하였습니다. scale은 무게와 동일 값을 곱해주었습니다.</li>
+              <li><strong>에이전트</strong>: 충돌, 추락, 일반 상황에서 모두 에이전트의 y축을 기준으로 회전 무작위로 회전시킴</li>
+              <li><strong>일반 상황 애니메이션</strong>: 애니메이션의 재생 속도를 0.5 ~ 1.5 사이의 무작위로 설정하였습니다.</li>
+            </ul>
+            <br>
+
+            <p>데이터수집은 60fps로 고정한 후 매 프레임마다 에이전트 머리의 position, rotation, velocity, angular velocity 값을 기록했습니다.</p>
+            <p>사고 상황 시뮬레이션에서는 충돌이 감지되거나 힘이 가해졌을 때 데이터 수집을 시작하여 20프레임 동안 머리에 큰 움직임이 없을 때까지 기록했습니다.</p>
+            <p>일반 상황 시뮬레이션에서는 한 번의 재생 후 데이터 수집을 중지했습니다.</p>
+
+            <h3>따라쟁이 가상 강아지 (IVD 모드)</h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/ARFitnessDog/fitnessdog_ivd.png" alt="ARFitnessDog">
+            </div>
+
+            <p>먼저 사용자의 운동 동작을 인식하기 위해 Meta Quest 3에서 제공하는 IOBT(Inside-Out Body Tracking) 기술과 Generative Leg 기술을 활용했습니다. 이를 통해 사용자의 전신의 3D 관절 좌표를 얻을 수 있습니다.</p>
+            <p>추출한 3D 관절 좌표를 통해 아래와 같은 조건을 세워 각 동작을 인식했습니다.</p>
+            <ul>
+                <li><strong>Reach(뻗기)</strong>: 손목 관절의 y 좌표가 머리보다 높아야 하며, 팔꿈치 각도가 150°에서 210° 사이인지 확인하여 팔이 완전히 뻗어졌는지 확인합니다. 어깨 관절에서 손목까지의 벡터 방향을 사용하여 동작이 왼쪽인지 오른쪽인지 결정합니다.</li>
+                <li><strong>Squat(스쿼트)</strong>: 발목, 무릎, 골반 좌표를 사용하여 무릎 각도가 100° 미만이면 앉은 자세로, 100° 이상이면 서 있는 자세로 인식합니다.</li>
+                <li><strong>Punch(펀치)</strong>: Reach 동작과 유사하게 팔이 완전히 뻗어졌는지 확인하고, 손목의 x 좌표가 반대쪽 어깨 관절의 x 좌표보다 앞에 있는지 확인하며, 팔이 앞으로 평행하게 뻗어 있는지 및 어느 방향을 향하고 있는지를 확인합니다.</li>
+                <li><strong>Stretch(스트레칭)</strong>: 손목 관절의 y 좌표가 머리보다 높은지 확인합니다. 골반, 어깨, 손목 관절의 좌표를 사용하여 내부 어깨 각도가 160° 미만인지 확인하여 팔이 올바르게 들어올려졌는지 및 상체가 충분히 기울어졌는지 확인합니다.</li>
+            </ul>
+            <p>각 동작의 조건에 따라 운동 동작이 인식되면, 가상 강아지는 해당 동작과 방향에 맞는 애니메이션을 재생합니다.</p>
+            <p>2초 이상 사용자 동작이 인식되지 않으면 가상 강아지는 짖으면서 운동을 재촉합니다.</p>
+            <br><br>
+
+            <h3>멀티 플레이 구현</h3>
+            <p>AWS EC2 서비스를 사용하여 서버를 구축하고 소켓통신을 통해 두 클라이언트 간의 상호작용을 가능하게 하였습니다.</p>
+            <p>각 클라이언트는 준비 상태 (boolean), 수행한 운동동작 (unshortint) 데이터를 serialization한 패킷을 준비 버튼을 눌렀을때와 운동 동작을 수행할때마다 서버에 전송합니다.</p>
+            <p>서버는 두 클라이언트의 준비 상태가 모두 true일때 두 클라이언트에게 운동 시작을 알리고 broadcasting을 통해 두 클라이언트의 운동 영상을 재생시킵니다. 또한 운동 중에는 두 클라이언트로부터 수신한 운동 동작이 동일한 경우 broadcasting을 통해 두 클라이언트의 가상 강아지의 애니메이션을 재생시킵니다.</p>
+            <br>
+            <br>
+
+            <button class="back-button">Back</button>
           </div>
 
           <!-- RescueRequest content -->
@@ -1072,7 +1177,7 @@
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
-                    <img src="./assets/images/project-1.jpg" alt="AR Fitness Dog" loading="lazy">
+                    <img src="./assets/images/projects/ARFitnessDog/fitnessdog_main.png" alt="AR Fitness Dog" loading="lazy">
                   </figure>
                   <h3 class="project-title">AR Fitness Dog</h3>
                   <p class="project-category">AR</p>

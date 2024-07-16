@@ -2010,6 +2010,7 @@ hr {
   color: var(--light-gray);
   font-size: var(--fs-5);
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 .project-content a {
@@ -2071,6 +2072,10 @@ hr {
   font-family: var(--ff-poppins);
   margin-bottom: 5px;
 } 
+
+strong {
+  color: var(--orange-yellow-crayola);
+}
 
 
 .papers ul {

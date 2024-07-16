@@ -356,7 +356,7 @@ const translations = {
     "intl-experience4-desc": "고등학생",
     
     "activity" : "활동",
-    "act-lion-title" : "Like Lion - 대학연합 IT동아리",
+    "act-lion-title" : "멋쟁이 사자처럼 - 대학연합 IT동아리",
     "act-lion-date" : "2020 - 2021",
     "act-lion-desc1" : "2020년 8기 아기사자(신입부원)",
     "act-lion-desc2" : "2021년 9기 운영진(교육팀)",
