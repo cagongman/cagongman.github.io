@@ -287,7 +287,7 @@ const translations = {
     
 
     // publication
-    "publication" : "Publication"
+    "publication" : "Publication/Award"
   },
 
   ko: {
@@ -366,7 +366,7 @@ const translations = {
     "act-kutc-desc" : "2019년 운영진(지도부장)",
 
     // publication
-    "publication" : "논문"
+    "publication" : "논문/수상"
   }
 };
 
