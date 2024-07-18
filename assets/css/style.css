@@ -1971,13 +1971,20 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-size: 2em;  /* Adjust the size as needed */
   margin-bottom: 10px;
 }
+ 
+.project-content h2 {
+  color: var(--orange-yellow-crayola);
+  font-family: var(--ff-poppins);
+  margin-bottom: 5px;
+  font-size: 25px; /* Adjust the size as needed */
+}
 
-.project-content h2, 
 .project-content h3 {
   color: var(--orange-yellow-crayola);
   font-family: var(--ff-poppins);
   margin-bottom: 5px;
-} 
+  font-size: 22px; /* Adjust the size as needed */
+}
 
 hr {
   border: 0;
@@ -1998,6 +2005,7 @@ hr {
   color: var(--white-1);
   font-size: var(--fs-5);
   line-height: 1.5;
+  margin-bottom: 5px;
   /* margin-bottom: 5px; */
 }
 
