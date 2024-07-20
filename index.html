@@ -632,9 +632,9 @@
               <br>
 
               <h3>첨부자료 링크</h3>
-              <p><a href="#">Github</a></p>
-              <p><a href="#">IVD 실행영상</a></p>
-              <p><a href="#">CVD 실행영상</a></p>
+              <p><a href="https://youtu.be/fElZnuTToOY" target="_blank">같이 운동하는 강아지 실행영상 (YouTube)</a></p>
+              <p><a href="https://youtu.be/KzgZ2TgzB_4" target="_blank">변덕스러운 강아지 실행영상 (YouTube)</a></p>
+              <p><a href="https://drive.google.com/file/d/152IXaNLJGen6vnvtcr9f82zd1P4JJewA/view?usp=sharing" target="_blank">논문 링크 (Drive)</a></p>
             </div>
             <br>
 
@@ -653,7 +653,7 @@
                 </li>
                 <li><strong>- Capricious Virtual Dog (CVD)</strong>
                     <ul>
-                        <li>무작위로 행동하는 가상 강아지 앞에서 운동할 수 있는 모드입니다.</li>
+                        <li>무작위로 행동하는 가상 강아지와 함께 운동하는 모드입니다.</li>
                     </ul>
                 </li>
                 <li><strong>- Interactive Virtual Dog (IVD)</strong>
@@ -675,7 +675,7 @@
             <p>가상 화면에는 Reach(팔 뻗기), Squat(스쿼트), Punch(펀치), Stretching(스트레칭) 네 가지 동작으로 구성된 1분 30초 길이의 운동 영상이 재생됩니다.</p>
             <br><br>
 
-            <h3>일반 가상 강아지 (CVD 모드)</h3>
+            <h3>변덕스러운 가상 강아지 (CVD 모드)</h3>
             <div class="centered-image-container">
               <img src="assets/images/projects/ARFitnessDog/fitnessdog1.png" width="700" class="centered-image" alt="ARFitnessDog">
             </div>
@@ -702,8 +702,11 @@
             <br><br>
 
             <h3>멀티 플레이 구현</h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/ARFitnessDog/fitnessdog_server.png" alt="ARFitnessDog">
+            </div>
             <p>AWS EC2 서비스를 사용하여 서버를 구축하고 소켓통신을 통해 두 클라이언트 간의 상호작용을 가능하게 하였습니다.</p>
-            <p>각 클라이언트는 준비 상태 (boolean), 수행한 운동동작 (unshortint) 데이터를 serialization한 패킷을 준비 버튼을 눌렀을때와 운동 동작을 수행할때마다 서버에 전송합니다.</p>
+            <p>각 클라이언트는 준비 상태, 수행한 운동동작 데이터를 serialization한 패킷을 준비 버튼을 눌렀을때와 운동 동작을 수행할때마다 서버에 전송합니다.</p>
             <p>서버는 두 클라이언트의 준비 상태가 모두 true일때 두 클라이언트에게 운동 시작을 알리고 broadcasting을 통해 두 클라이언트의 운동 영상을 재생시킵니다. 또한 운동 중에는 두 클라이언트로부터 수신한 운동 동작이 동일한 경우 broadcasting을 통해 두 클라이언트의 가상 강아지의 애니메이션을 재생시킵니다.</p>
             <br>
             <br>
@@ -723,6 +726,8 @@
             <h3>결과</h3>
             
             <p>총 24명(남: 13, 여: 11; 나이: M = 23.63, SD = 5.49)의 참가자들을 통해 설문 결과를 얻었습니다.</p>
+            <p>이원 반복측정 분산분석(2-way ANOVA)를 통해 데이터의 유의미성을 분석했고, 그 결과 아래와 같은 점을 알게 되었습니다.</p>
+            
 
             <button class="back-button">Back</button>
           </div>
