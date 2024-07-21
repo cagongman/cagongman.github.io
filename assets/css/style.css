@@ -2114,3 +2114,16 @@ strong {
     font-size: 0.875rem;
     color: var(--light-gray);
 }
+
+
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px; /* 아이콘과 텍스트 사이 간격 */
+  color: white; /* 아이콘 색상 */
+}
+
+.link-icon ion-icon {
+  font-size: 1em; /* 아이콘 크기 조절 */
+  color: white; /* 아이콘 색상 */
+}
