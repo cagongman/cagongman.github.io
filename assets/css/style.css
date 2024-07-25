@@ -2180,7 +2180,7 @@ strong {
 
 .award-type-1 {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 2px;
   padding: 2px 8px;
   background-color: rgb(240, 222, 108);
   border-radius: 4px;
@@ -2191,7 +2191,7 @@ strong {
 
 .award-type-2 {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 2px;
   padding: 1px 7px;
   background-color: rgb(200, 200, 200);
   border-radius: 4px;
@@ -2202,7 +2202,7 @@ strong {
 
 .award-type-3 {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 2px;
   padding: 2px 8px;
   background-color: rgb(170, 120, 83);
   border-radius: 4px;
