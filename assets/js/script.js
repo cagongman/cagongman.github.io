@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", function() {
         content.style.display = "none";
       });
       projectContent.style.display = "block";
+      window.scrollTo({top: 0, behavior: 'smooth'});
     });
   });
 
