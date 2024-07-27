@@ -2066,6 +2066,33 @@ hr {
 }
 
 
+.about-section {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.about-devision{
+  flex: 0 0 10px; /* 연도의 너비를 고정 */
+  padding-right: 20px; /* 논문 리스트와의 간격 */
+}
+
+.about-detail {
+  flex: 1; /* 남은 공간을 차지 */
+}
+
+.about-detail ul {
+  list-style-type: none;
+  padding: 0;
+  padding-right: 58px;
+  margin-bottom: 15px;
+}
+
+.about-list li {
+  margin-bottom: 20px;
+}
+
+
+
 /* Publication */
 .papers {
   margin-top: 2rem;

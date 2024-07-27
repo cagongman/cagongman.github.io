@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function() {
         content.style.display = "none";
       });
       projectContent.style.display = "block";
-      window.scrollTo({top: 0, behavior: 'smooth'});
+      window.scrollTo({top: 0});
     });
   });
 
@@ -186,6 +186,7 @@ document.addEventListener("DOMContentLoaded", function() {
   backButton.forEach(button => {
     button.addEventListener("click", function() {
       showProjectList();
+      window.scrollTo({top: 0});
     });
   });
 
