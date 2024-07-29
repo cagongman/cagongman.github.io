@@ -167,6 +167,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
+   // Clear active state from all filter buttons
+   function clearActiveFilters() {
+    filterBtns.forEach(btn => btn.classList.remove("active"));
+  }
+
+  // Set initial active filter button and filter items
+  const initialFilter = 'main';
+  clearActiveFilters(); // Clear any active states
+  const initialFilterBtn = Array.from(filterBtns).find(btn => btn.innerText.toLowerCase() === initialFilter);
+  if (initialFilterBtn) {
+    initialFilterBtn.classList.add("active");
+    filterFunc(initialFilter);
+  }
+
   // Event listener for project items
   projectItems.forEach(item => {
     item.addEventListener("click", function(e) {
