@@ -1435,10 +1435,30 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .about-text { margin-bottom: 40px; }
 
+
+  /* .toggle {
+    color: var(--orange-yellow-crayola);
+    font-family: var(--ff-poppins);
+    margin-bottom: 10px;
+  }
+
+  .content {
+    display: none; 
+  }
+  .content.show {
+      display: block; 
+  }
+
+  .content p {
+    color: var(--orange-yellow-crayola);
+    font-family: var(--ff-poppins);
+    margin-bottom: 10px;
+  } */
+
   /* service */
 
   .service-item {
-    display: flex;
+    /* display: flex; */
     justify-content: flex-start;
     align-items: flex-start;
     gap: 18px;

@@ -220,6 +220,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// For ToggleButton
+// document.getElementById("toggleButton").addEventListener("click", function() {
+//   var content = document.getElementById("foldingContent");
+
+//   if (content.classList.contains("show")) {
+//     content.classList.remove("show");
+//     this.textContent = "알고 있는";
+//   } else {
+//     content.classList.add("show");
+//     this.textContent = "접기";
+//   }
+// });
 
 
 // Add language switching functionality
