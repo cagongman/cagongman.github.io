@@ -2104,6 +2104,23 @@ hr {
 }
 
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열로 나눔 */
+  gap: 10px;
+  row-gap: 5px;
+  padding: 10px;
+}
+.grid-item {
+  overflow: hidden;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 
 /* Publication */
 .notification {
