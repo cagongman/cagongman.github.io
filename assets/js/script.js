@@ -81,7 +81,7 @@ const filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
     const itemCategories = filterItems[i].dataset.category.split(' ');
 
-    if (selectedValue === "all") {
+    if (selectedValue === "전체") {
       filterItems[i].classList.add("active");
     } else if (itemCategories.includes(selectedValue)) {
       filterItems[i].classList.add("active");
@@ -150,7 +150,6 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
 document.addEventListener("DOMContentLoaded", function() {
   const projectItems = document.querySelectorAll(".project-item");
   const projectContents = document.querySelectorAll(".project-content");
@@ -167,15 +166,27 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
 
-   // Clear active state from all filter buttons
-   function clearActiveFilters() {
+  // Clear active state from all filter buttons
+  function clearActiveFilters() {
     filterBtns.forEach(btn => btn.classList.remove("active"));
   }
 
+  // Filter function
+  function filterFunc(category) {
+    projectItems.forEach(item => {
+      const itemCategory = item.getAttribute("data-category").toLowerCase();
+      if (category === '전체' || itemCategory === category) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+
   // Set initial active filter button and filter items
-  const initialFilter = 'main';
+  const initialFilter = '전체';
   clearActiveFilters(); // Clear any active states
-  const initialFilterBtn = Array.from(filterBtns).find(btn => btn.innerText.toLowerCase() === initialFilter);
+  const initialFilterBtn = Array.from(filterBtns).find(btn => btn.innerText.trim().toLowerCase() === initialFilter);
   if (initialFilterBtn) {
     initialFilterBtn.classList.add("active");
     filterFunc(initialFilter);
@@ -214,7 +225,10 @@ document.addEventListener("DOMContentLoaded", function() {
   // Event listener for filter buttons
   filterBtns.forEach(btn => {
     btn.addEventListener("click", function() {
-      showProjectList();
+      const filterCategory = this.innerText.trim().toLowerCase();
+      clearActiveFilters();
+      this.classList.add("active");
+      filterFunc(filterCategory);
     });
   });
 });
