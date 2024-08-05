@@ -228,6 +228,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const filterCategory = this.innerText.trim().toLowerCase();
       clearActiveFilters();
       this.classList.add("active");
+      showProjectList();
       filterFunc(filterCategory);
     });
   });

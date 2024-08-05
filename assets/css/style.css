@@ -730,32 +730,6 @@ main {
 }
 
 
-/**
- * #clients 
- */
-
-/* .clients { margin-bottom: 15px; }
-
-.clients-list {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-  margin: 0 -15px;
-  padding: 25px;
-  padding-bottom: 25px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
-} */
-
-/* .clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
-} */
-
 .clients-section {
   margin-bottom: 20px; /* Add some space between sections */
 }
@@ -1475,6 +1449,29 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 100%;
   }
 
+  .service h4 {
+      color: var(--orange-yellow-crayola);
+      font-family: var(--ff-poppins);
+      font-size: 1.3em;
+      margin-bottom: 10px;
+  }
+
+  .service p {
+    color: var(--light-gray); 
+  }
+
+  /* .service ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  } */
+  
+  .service ul li {
+    color: var(--light-gray);
+    font-size: var(--fs-5);
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
 
   /* testimonials */
 
@@ -2174,7 +2171,7 @@ strong {
 }
 
 .year {
-  flex: 0 0 60px; /* 연도의 너비를 고정 */
+  flex: 0 0 70px; /* 연도의 너비를 고정 */
   padding-right: 30px; /* 논문 리스트와의 간격 */
 }
 
@@ -2238,6 +2235,17 @@ strong {
   font-weight: bold; 
   color: #333;
 }
+
+/* 학회명, 저자, 발표 색상 변경 */
+/* .conference {
+  background-color: #e3f2fd; 
+}
+.author {
+  background-color: #ffe0b2; 
+}
+.presentation-type {
+  background-color: #fff9c4; 
+} */
 
 
 
