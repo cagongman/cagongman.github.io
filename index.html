@@ -297,8 +297,6 @@
           <p>-&emsp;Flutter와 Dart를 사용하여 iOS/Android 크로스 플랫폼 앱을 개발한 경험이 있습니다.</p>
           <p>-&emsp;SwiftUI를 활용하여 iOS 네이티브 앱을 제작해 보았습니다.</p>
           <p>-&emsp;Firebase를 이용해 실시간 데이터 동기화 및 사용자 인증 시스템을 구현한 경험이 있습니다.</p>
-          <br>
-          <br>
 
           <!-- <ul class="service-list">
             <li class="service-item">
@@ -756,7 +754,7 @@
             </ul>
             
             <p>또한 본 시스템은 2인 멀티플레이를 제공합니다. 친구와 함께 세가지 모드를 모두 즐길 수 있습니다.</p>
-            <p>멀티플레이 환경에서 ‘IVD’ 모드를 실행할 경우 강아지는 두 사용자의 행동이 일치할 경우에만 동작을 따라하게 됩니다.</p>
+            <p>멀티플레이 환경에서 ‘IVD’ 모드를 실행할 경우 두 사용자의 행동이 일치할 경우에만 강아지가 동작을 따라하게 됩니다.</p>
             <br><br>
 
             <h3>게임 환경</h3>
@@ -773,8 +771,24 @@
               <img src="assets/images/projects/ARFitnessDog/fitnessdog1.png" width="700" class="centered-image" alt="ARFitnessDog">
             </div>
 
-            <p>실제 반려견처럼 행동하도록 만들기 위해서 강아지 모션 애니메이션 클립을 세개의 부모 상태와 해당 자식 행동으로 구성하였습니다. 세 개의 부모 상태는 기본 상태 (서있는 상태), 앉아있는 상태, 누워있는 상태 세가지 이며 각 상태에서 강아지가 취할만한 행동인 햝기, 긁기, 털기 등의 자식 행동을 설정하였습니다.</p>
-            <p>마지막으로 5초에서 10초 사이의 임의의 간격으로 가상 강아지가 무작위 행동을 취하도록 구현하였습니다.</p>
+            <!-- <p>실제 반려견처럼 행동하도록 만들기 위해서 강아지 모션 애니메이션 클립을 세개의 부모 상태와 해당 자식 행동으로 구성하였습니다. 세 개의 부모 상태는 기본 상태 (서있는 상태), 앉아있는 상태, 누워있는 상태 세가지 이며 각 상태에서 강아지가 취할만한 행동인 햝기, 긁기, 털기 등의 자식 행동을 설정하였습니다.</p>
+            <p>마지막으로 5초에서 10초 사이의 임의의 간격으로 가상 강아지가 무작위 행동을 취하도록 구현하였습니다.</p> -->
+
+            <p>강아지의 자연스러운 행동을 구현하기 위해 다음과 같은 애니메이션 시스템을 설계했습니다:</p>
+            <h4>1. 기본 자세 3가지</h4>
+            <ul>
+                <li>-&emsp;서있기</li>
+                <li>-&emsp;앉기</li>
+                <li>-&emsp;눕기</li>
+            </ul>
+
+            <h4>2. 각 기본 자세에 연결된 세부 행동들</h4>
+            <ul>
+                <li>-&emsp;예: 햝기, 긁기, 털기 등</li>
+            </ul>
+
+            <p>이러한 구조를 통해 가상의 반려견이 실제 강아지처럼 다양한 동작을 수행할 수 있습니다.</p>
+            <p>더불어, 강아지의 행동이 예측 불가능하고 생동감 있게 보이도록 5~10초 간격으로 무작위 행동을 선택하여 실행하였습니다.</p>
             <br><br>
 
             <h3>따라쟁이 가상 강아지 (IVD 모드)</h3>
@@ -834,8 +848,8 @@
             <ul>
               <li>- 가상 강아지의 존재가 사용자들의 운동 경험을 향상시킨다. (NVD에서 CVD로 <strong>16.34%</strong> 향상)</li>
               <li>- 가상 강아지와의 상호작용이 포함될 경우 사용자들의 운동 경험이 더욱 향상된다. (CVD에서 IVD로 <strong>23.03%</strong> 향상)</li>
-              <li>- 상호작용 요소로 인해 가상 강아지 인식이 더욱 크게 긍정적으로 변한다. (CVD에서 IVD로 <strong>46.87%</strong> 향상)</li>
-              <li>- 운동 경험 및 가상 강아지 인식에 있어서 개인과 그룹 운동 간에는 차이가 없다.</li>
+              <li>- 상호작용 요소로 인해 가상 강아지에 대한 인식이 더욱 크게 긍정적으로 변한다. (CVD에서 IVD로 <strong>46.87%</strong> 향상)</li>
+              <li>- 운동 경험 및 가상 강아지에 대한 인식에 있어서 개인과 그룹 운동 간에는 차이가 없다.</li>
             </ul>
             <br><br>
 
@@ -857,15 +871,13 @@
 
             <div class="project-content-box">
               <h3>구성 인원</h3>
-              <p>-&emsp;개발 : 1&emsp;기획 : 4&emsp;디자인 : 1</p>
+              <p>-&emsp;개발 : 1&emsp;디자인/기획 : 5</p>
               <br>
 
               <h3>담당 역할</h3>
-              <p>-&emsp;시스템 설계 및 구현</p>
-              <p>-&emsp;가상 강아지 애니메이션 설계 및 구현</p>
-              <p>-&emsp;Full Body Tracking을 활용한 가상 강아지와의 상호작용 구현</p>
-              <p>-&emsp;AWS EC2 기반 2인 멀티플레이 시스템 구축</p>
-              <p>-&emsp;사용자 실험 설계 및 분석</p>
+              <p>-&emsp;Firebase를 활용한 회원 인증 구현</p>
+              <p>-&emsp;카메라 인식, 퍼즐, 추리 문제 구현</p>
+              <p>-&emsp;사용자 데이터 수집</p>
               <br>
 
               <h3>시기 및 기간</h3>
@@ -941,7 +953,7 @@
             <div class="centered-image-container">
               <img src="assets/images/projects/OREH/oreh-data.png" class="centered-image">
             </div>
-            <p>게임 진행 중에는 진행 날짜와 사용자들의 각 미션마다 소요된 시간, 전체 소요된 시간을 수집하였습니다.</p>
+            <p>게임 진행 중에는 진행 날짜와 사용자들의 각 미션마다 소요된 시간, 전체 소요된 시간을 초단위로 수집하였습니다.</p>
             <p>또한 이를 활용하여 부득이하게 중간에 게임을 종료했을지라도 이어서 플레이 가능하게 구현하였습니다.</p>
             <p>게임 종료 후에는 5점 만점의 게임 리뷰 점수를 수집하였습니다.</p>
             <br><br>
@@ -964,7 +976,10 @@
             <p>
               건설현장 지원 시스템의 후속 연구로 사고 발생 시 작업자의 사고를 자동으로 인식하고 구조 요청을 보내기 위한 기능을 개발했습니다. 
             <p>
-              이를 위해, 추락이나 충돌 사고를 시뮬레이션하고 가상 스턴트맨을 사용하여 머리 움직임을 감지할 수 있는 LSTM 기반 인식 모델을 개발했습니다.
+              이를 위해, 가상 스턴트맨을 활용하여 추락이나 충돌 사고를 시뮬레이션하고, 이로부터 머리 움직임 데이터를 추출했습니다. 추출한 데이터를 기반으로 LSTM(Long Short-Term Memory) 네트워크를 이용한 사고 감지 모델을 구현하고 학습시켰습니다.
+            </p>
+            <p>
+              학습된 모델은 ONNX 형식으로 변환하고, 시뮬레이션 환경에 적용하여 테스트를 수행했습니다.
             </p>
             <br>
 
@@ -981,7 +996,7 @@
               <br>
 
               <h3>시기 및 기간</h3>
-              <p>-&emsp;한양대학교 혼합현실 연구실(석사과정)</p>
+              <p>-&emsp;한양대학교 혼합현실 연구실(석사과정 2기)</p>
               <p>-&emsp;2023년 1월 ~ 2023년 9월</p>
               <br>
 
@@ -1036,7 +1051,7 @@
             </ul>
             <br>
 
-            <p>데이터수집은 60fps로 고정한 후 매 프레임마다 에이전트 머리의 position, rotation, velocity, angular velocity 값을 기록했습니다.</p>
+            <p>머리 움직임 데이터는 60fps로 고정한 후 매 프레임마다 에이전트 머리의 position, rotation, velocity, angular velocity 값을 수집했습니다.</p>
             <p>충돌 객체 및 낙하 유형 별로 각 100회씩 총 600회의 시뮬레이션을 진행하였고 그 중 연속된 30 프레임을 무작위로 1000개 추출하였습니다.</p>
             <p>일반 상황 데이터 또한 각 에니메이션 클립 별로 10회씩 총 300회 시뮬레이션을 진행한 후 연속된 30 프레임 1000개를 추출했습니다. </p>
             <br>
@@ -1060,7 +1075,8 @@
               <li><strong>Batch size</strong>: 64</li>
             </ul>
 
-            <p>유니티의 Barracuda 라이브러리를 사용하여 학습된 모델을 실행하였습니다. 구현한 시뮬레이션 환경에서 충돌 및 추락사고를 정확히 감지하는 것을 확인할 수 있었습니다.</p>
+            <p>개발된 시스템의 실제 성능을 검증하기 위해 유니티 엔진의 신경망 추론 라이브러리인 Barracuda를 활용하여 학습된 LSTM 모델을 통합하였습니다.</p>
+            <p>테스트 결과, 구현된 시스템은 충돌 사고와 추락 사고를 높은 정확도로 식별해내는 것을 확인했습니다.</p>
             <br><br>
 
             <button class="back-button">Back</button>
@@ -1073,7 +1089,7 @@
             <h2>프로젝트 개요</h2>
             <hr>
             <p>
-              홍익대학교 디자인학과 학생들과 협업하여 미래의 건설산업에 대비하여 HoloLens2를 활용한 건설현장 어시스턴트 시스템을 개발하였습니다.
+              홍익대학교 디자인학과 학생들과 협업하여 미래의 건설산업에 대비하여 HoloLens2를 활용한 건설현장 지원 시스템을 개발하였습니다.
             </p>
             <p>
               혼자 작업하던 작업자가 사고를 당하면 건설현장의 특성상 높은 소음 및 넓은 작업환경으로 인해 즉각적인 구조나 응급처치가 어려운 경우가 많습니다.
@@ -1094,7 +1110,7 @@
               <br>
 
               <h3>시기 및 기간</h3>
-              <p>-&emsp;한양대학교 혼합현실 연구실(석사과정)</p>
+              <p>-&emsp;한양대학교 혼합현실 연구실(석사과정 1기)</p>
               <p>-&emsp;2022년 9월 ~ 2023년 1월</p>
               <br>
 
@@ -1154,7 +1170,7 @@
             <p><strong>(1) 구조 요청자 시점</strong></p>
             <p>구조 요청이 완료된 후 '요청 완료' 팝업창이 생성되며 3초 후 메인 화면으로 돌아가게 됩니다.</p>
             <p><strong>(2) 작업 팀장 시점</strong></p>
-            <p>구조 요청이 발생하면 작업 팀장에게 요청자의 위치와 캡처된 시야 정보가 전달되며 작업 팀장은 받은 정보를 통해 119 신고와 동시에 빠른 대응을 취할 수 있습니다.</p>
+            <p>구조 요청이 발생하면 작업 팀장에게 요청자의 캡처된 시야 정보가 전달되며 작업 팀장은 받은 정보를 통해 119 신고와 동시에 빠른 대응을 취할 수 있습니다.</p>
 
             <!-- <br>
 
@@ -1187,8 +1203,8 @@
 
             <div class="project-content-box">
               <h3>구성 인원</h3>
-              <p>-&emsp;경북대학교 영상처리 및 분석 연구실</p>
-              <p>-&emsp;경북대학교치과병원 치과보철과</p>
+              <p>-&emsp;경북대학교 영상처리 및 분석 연구실 (학부연구생 1)</p>
+              <p>-&emsp;경북대학교치과병원 치과보철과 (박사 과정 1)</p>
               <br>
 
               <h3>담당 역할</h3>
@@ -1255,7 +1271,7 @@
 
           <!-- WaveRemoteSensing content -->
           <div class="remoteSensing project-content" style="display: none;">
-            <h1>Wave Remote Sensing</h1>
+            <h1>파도를 이용한 원격 감지</h1>
             <br>
             <h3>프로젝트 개요</h3>
             <hr>
@@ -1504,13 +1520,13 @@
             <h2>프로젝트 개요</h2>
             <hr>
             <p>
+              <strong>공공데이터 활용 경진대회 "우수상"을 수상하였습니다.</strong>
+            </p>
+            <p>
               거리에 무분별하게 버려진 쓰레기와 지정된 수거함을 찾기 어려운 문제를 해결하기 위해, 쓰레기통 위치와 올바른 폐기법을 알려주는 서비스 '에코빈'을 개발하게 되었습니다.
             </p>
             <p>
               이 서비스는 보상 제도를 통해 시민들이 올바르게 쓰레기를 처리하도록 장려합니다.
-            </p>
-            <p>
-              (공공데이터 활용 경진대회 우수상을 수상하였습니다.)
             </p>
             <br>
 
@@ -1554,18 +1570,19 @@
             <!-- <p><img src="assets/images/projects/Ecobin/ecobin1.png" alt="Ecobin"></p> -->
 
             <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
-              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_map.gif"></div>
-              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_map2.gif"></div>
-              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_ball.gif"></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_map.gif"><p style="text-align: center;">메인화면 쓰레기통 시각화</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_map2.gif"><p style="text-align: center;">쓰레기 카테고리</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_ball.gif"><p style="text-align: center;">추첨공 획득</p></div>
             </div>
             <p>MapKit API를 통해 생성된 지도에 변환한 좌표(경도, 위도)를 건전지, 형광등, 일반쓰레기 카테고리별로 나누어 marker를 추가해 시각화 하였습니다.</p>
             <p>쓰레기를 버린 쓰레기통 위치의 마커를 클릭하여 "추첨 공"을 받을 수 있습니다. </p>
             <p>추첨 공: 상품 추첨 행사에 사용되는 응모권입니다.</p>
+            <br>
 
             <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
-              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_noti.gif"></div>
-              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_alert.gif"></div>
-              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_reward.gif"></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_noti.gif"><p style="text-align: center;">분리배출 안내</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_alert.gif"><p style="text-align: center;">쓰레기통 문의</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/Ecobin/eco_reward.gif"><p style="text-align: center;">당첨결과 확인</p></div>
             </div>
             <p>메인 화면의 전구 아이콘을 클릭하여 올바른 쓰레기 처리를 위한 재활용 방법에 대한 안내 받을 수 있습니다.</p>
             <p>만약 쓰레기 통이 존재함에도 불구하고 앱에 표시되어있지 않을 경우 사용자가 직접 쓰레기 통의 위치를 신고할 수 있습니다.</p>
@@ -1845,7 +1862,7 @@
                     </div>
                     <img src="./assets/images/projects/RemoteSensing/sensing_main.png" alt="Wave Remote Sensing" loading="lazy">
                   </figure>
-                  <h3 class="project-title">Wave Remote Sensing</h3>
+                  <h3 class="project-title">파도를 이용한 원격 감지</h3>
                   <p class="project-category">Unity, scipy, matplotlib, numpy</p>
                 </a>
               </li>
