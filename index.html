@@ -1068,15 +1068,22 @@
 
             <h3><strong>가상 스턴트맨 설정</strong></h3>
             <div class="centered-image-container">
-              <img src="assets/images/projects/AccidentDetection/accident_ragdoll.png" width="700" class="centered-image" alt="ARFitnessDog">
+              <img src="assets/images/projects/AccidentDetection/accident_ragdoll.png" width="700" class="centered-image">
             </div>
             <p>충돌 및 추락 상황을 연출하기 위해서 유니티 게임엔진의 Ragdoll physics 기능을 사용하였습니다.</p>
             <p>기본(Idle) 상태의 에이전트에 충돌을 감지하는 콜라이더를 설정하여 콜라이더에 충돌 객체가 감지될 경우 기본 상태 에이전트의 각 관절의 위치와 회전 값을 ragdoll physics가 적용된 에이전트에 동일하게 적용한 후 교체시켰습니다.</p>
             <br><br>
 
             <h3>시뮬레이션 구현</h3>
-            <div class="centered-image-container">
-              <img src="assets/images/projects/AccidentDetection/accident_object.png" alt="ARFitnessDog">
+            <!-- <div class="centered-image-container">
+              <img src="assets/images/projects/AccidentDetection/accident_object.png">
+            </div> -->
+
+            <div class="grid-container">
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_brick.gif"><p style="text-align: center;">벽돌</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_pipe.gif"><p style="text-align: center;">파이프</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_metal.gif"><p style="text-align: center;">철 기둥</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_fence.gif"><p style="text-align: center;">철망 펜스</p></div>
             </div>
 
             <p>본 프로젝트에서는 자재 낙하로 인한 충돌 사고와 고층 높이에서 떨어지는 추락 사고를 구현하였습니다.</p>
@@ -1084,6 +1091,11 @@
             <p>추락 사고를 재현하기 위해 에이전트를 임시 발판과 사다리 위에 위치시킨 후, AddForce() 함수를 사용해 흉부 쪽으로 힘을 가해 밀쳐내는 방식을 사용했습니다. 이때 힘은 'impulse' 모드로 적용했습니다.</p>
             <p>일반 상황의 경우 30개의 일상 생활 관련 모션 에니메이션 클립을 사용하였습니다.</p>
             <br><br>
+
+            <div class="grid-container">
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_ladder.gif"><p style="text-align: center;">사다리</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_scafold.gif"><p style="text-align: center;">임시 발판</p></div>
+            </div>
 
             <h3>데이터 생성</h3>
             <!-- 여기에 시뮬레이션 GIF 넣기 -->
