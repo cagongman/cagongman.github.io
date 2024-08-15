@@ -859,10 +859,12 @@
             <h2>프로젝트 개요</h2>
             <hr>
             <p>
-              100년만에 고국 품으로 돌아온 애국지사 "황기환", 그의 이야기를 담은 야외형 미션추리게임을 개발하였습니다.
+              애국지사 "황기환", 그의 이야기를 담은 야외형 미션추리게임을 개발하였습니다.
             </p>
-            <p>플레이어는 국가유공자의 조력자가 되어 게임을 진행하게 됩니다. 장소는 덕수궁에서 진행되며 같이 제공되는 키트와 함께 더욱 몰입감있고 현장감 넘치는 경험을 선사합니다.</p>
-            <p>본 게임의 목적은 MZ세대/청소년들에게 국가유공자들의 업적에 대해 알리기 위함입니다.</p>
+            <p>
+              본 프로젝트는 “백문불여일견”의 교육 철학을 가지고 현장 기반 역사 학습 경험을 제공하는 것을 목표로 합니다.
+            </p>
+            <p>애국지사 황기환의 이야기를 중심으로, MZ세대와 청소년들에게 게임의 재미 요소를 활용해 역사 학습에 대한 동기를 부여하고, 실제 역사의 현장에서 독립운동가의 발자취를 따라가는 몰입형 경험을 제공하고자 했습니다.</p>
             <br>
 
             <div class="project-content-box">
@@ -871,8 +873,9 @@
               <br>
 
               <h3>담당 역할</h3>
-              <p>-&emsp;Firebase를 활용한 회원 인증 구현</p>
+              <p>-&emsp;Firebase를 활용한 회원 가입/로그인 기능 구현</p>
               <p>-&emsp;카메라 인식, 퍼즐, 추리 문제 구현</p>
+              <p>-&emsp;사용자 데이터 수집</p>
               <p>-&emsp;사용자 데이터 수집</p>
               <br>
 
@@ -955,8 +958,8 @@
             <br><br>
 
             <h3>결과</h3>
-            <p>총 45명의 유저가 게임을 진행했으며, 전체 평균 리뷰 점수는 <strong>3.56</strong> 이었습니다.</p>
-            <p>인당 평균 플레이 시간은 <strong>51분</strong> 이었습니다.</p>
+            <p>총 45명의 사용자가 게임을 완료했으며, 전체 평균 리뷰 점수는 <strong>4.56</strong> 이었습니다.</p>
+            <p>사용자 평균 플레이 시간은 <strong>84분</strong> 이었습니다.</p>
             <p></p>
             <br><br>
 
@@ -965,35 +968,45 @@
 
           <!-- AccidentSimulation content -->
           <div class="accidentSimulation project-content" style="display: none;">
-            <h1>건설현장 사고감지 모델</h1>
+            <h1>건설XR: 건설현장 보조 시스템</h1>
             <br>
             <h2>프로젝트 개요</h2>
             <hr>
             <p>
-              건설현장 지원 시스템의 후속 연구로 사고 발생 시 작업자의 사고를 자동으로 인식하고 구조 요청을 보내기 위한 기능을 개발했습니다. 
+              이 프로젝트는 홍익대학교 디자인학과 학생들과 협업하여 미래의 건설산업에 대비한 HoloLens2 기반 건설현장 안전 보조 시스템을 개발하는 것을 목표로 했습니다.
+            </p>
+            <p>
+              건설현장의 높은 소음과 넓은 작업환경으로 인해 고립된 작업자의 안전사고 시 즉각적인 대응이 어렵다는 문제에 착안하여, 수동 및 자동 구조요청 기능을 구현했습니다.
+            </p>
+            <p>
+              자동 구조요청의 경우 작업자의 의식 상실 상황에 대비해 가상 스턴트맨 시뮬레이션과 LSTM 네트워크를 활용한 자동 사고 감지 및 구조 요청 시스템을 개발했습니다. 
+            </p>
+            <!-- <p>
+              또한 사고 발생 시 작업자가 즉시 의식을 잃는 상황을 대비해 사고를 자동으로 인식하고 구조 요청을 보내기 위한 기능을 개발했습니다. 
             <p>
               이를 위해, 가상 스턴트맨을 활용하여 추락이나 충돌 사고를 시뮬레이션하고, 이로부터 머리 움직임 데이터를 추출했습니다. 추출한 데이터를 기반으로 LSTM(Long Short-Term Memory) 네트워크를 이용한 사고 감지 모델을 구현하고 학습시켰습니다.
             </p>
             <p>
               학습된 모델은 ONNX 형식으로 변환하고, 시뮬레이션 환경에 적용하여 테스트를 수행했습니다.
-            </p>
+            </p> -->
             <br>
 
             <div class="project-content-box">
               <h3>구성 인원</h3>
-              <p>-&emsp;개인 연구 (1인 개발)</p>
+              <p>-&emsp;개발: 2,&emsp;디자인/기획: 2</p>
               <br>
 
               <h3>담당 역할</h3>
-              <p>-&emsp;가상 스턴트맨 구현</p>
+              <p>-&emsp;시선을 활용한 상호작용 구현</p>
+              <p>-&emsp;구조 요청 기능 구현</p>
               <p>-&emsp;추락, 충돌 사고 시뮬레이션 구현</p>
               <p>-&emsp;머리 움직임 데이터 추출 및 네트워크 모델 학습</p>
-              <p>-&emsp;학습 모델 시뮬레이션에 적용</p>
+              <p>-&emsp;학습된 모델의 Unity 환경 내 추론 구현</p>
               <br>
 
               <h3>시기 및 기간</h3>
               <p>-&emsp;한양대학교 혼합현실 연구실(석사과정 2기)</p>
-              <p>-&emsp;2023년 1월 ~ 2023년 9월</p>
+              <p>-&emsp;2022년 10월 ~ 2023년 9월</p>
               <br>
 
               <h3>타겟 플렛폼</h3>
@@ -1003,6 +1016,7 @@
               <h3>사용 기술</h3>
               <span class="skill-type">C#</span>
               <span class="skill-type">Python</span>
+              <span class="skill-type">MRTK</span>
               <span class="skill-type">Barracuda</span>
               <span class="skill-type">Pytorch</span>
               <span class="skill-type">ONNX</span>
@@ -1012,12 +1026,46 @@
               <br><br>
 
               <h3>첨부자료 링크</h3>
-              <p><a href="https://drive.google.com/file/d/1cpmK1Zpk2S9PSRswza_0TFJOJJC2AEEC/view?usp=drive_link" target="_blank">논문 링크 (Drive)</a></p>
+              <p><a href="https://drive.google.com/file/d/1zP8ENeAiknNVbiMzyjk6WCwSXcF9jLCV/view?usp=drive_link" target="_blank">(논문) A Framework for Emergency Rescue Request on Construction Site in XR</a></p>
+              <p><a href="https://drive.google.com/file/d/1cpmK1Zpk2S9PSRswza_0TFJOJJC2AEEC/view?usp=drive_link" target="_blank">(논문) Virtual Agent Simulation for Head Motion-Based Accident Detection Model on Construction Site</a></p>
             </div>
             <br>
 
             <h2>상세 내용</h2>
             <hr>
+
+            <h3><strong>SOS 구조 요청</strong></h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/RescueRequest/colo_gaze_demo.gif" class="centered-image">
+            </div>
+            <p>메인 화면 양쪽 상단에 구조 요청을 보내기 위한 SOS 버튼이 있습니다. 구조 요청은 두개의 SOS 버튼 중 하나를 3초 동안 응시하거나 터치하여 활성화할 수 있습니다.</p>
+            <p>사용자가 SOS 버튼 및 버튼을 활성화하고 있다고 인지시키기 위해 세가지 피드백을 제공하였습니다.</p>
+
+            <ul>
+              <li><strong>최대 게이지 표시</strong>: 버튼 크기의 2배인 빨간색 원이 SOS 버튼 뒤에 나타납니다.</li>
+              <li><strong>버튼 사이즈 변화</strong>: SOS 버튼이 점차 커집니다. 버튼의 크기는 3초 동안 첫 번째 효과로 생성된 원의 크기만큼 증가합니다.</li>
+              <li><strong>원형 타이머 생성</strong>: 작업자가 바라보고 있는 지점에 원형 타이머가 생성되며 긴급 요청이 실행될 때까지 남은 시간이 숫자로 표시되고 게이지바가 채워지게 됩니다.</li>
+            </ul>
+            <br>
+
+            <p>SOS 버튼이 활성화 되면 배경이 빨간색으로 바뀌고 사용자는 재확인 창을 제외한 다른 구성 요소와 상호 작용할 수 없게 됩니다.</p>
+            <p>"예" 버튼과 "아니오" 버튼은 시선을 통한 상호작용의 오차를 최대한 방지하기 위해 양쪽 끝에 배치하였습니다.</p>
+            <p>SOS 버튼 및 모든 버튼들은 시선과 터치를 통해 상호작용이 가능합니다.</p>
+            <br><br>
+
+            <h3><strong>구조 요청 완료 및 수신</strong></h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/RescueRequest/colo_touch_demo.gif" class="centered-image">
+            </div>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/RescueRequest/colo_request_complete.png" class="centered-image">
+            </div>
+            <p><strong>(1) 구조 요청자 시점</strong></p>
+            <p>구조 요청이 완료된 후 '요청 완료' 팝업창이 생성되며 3초 후 메인 화면으로 돌아가게 됩니다.</p>
+            <p><strong>(2) 작업 팀장 시점</strong></p>
+            <p>구조 요청이 발생하면 작업 팀장에게 요청자의 캡처된 시야 정보가 전달되며 작업 팀장은 받은 정보를 통해 119 신고와 동시에 빠른 대응을 취할 수 있습니다.</p>
+            <br><br>
+
             <h3><strong>가상 스턴트맨 설정</strong></h3>
             <div class="centered-image-container">
               <img src="assets/images/projects/AccidentDetection/accident_ragdoll.png" width="700" class="centered-image" alt="ARFitnessDog">
