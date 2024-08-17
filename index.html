@@ -1079,6 +1079,7 @@
               <img src="assets/images/projects/AccidentDetection/accident_object.png">
             </div> -->
 
+            <h4 style="text-align: center;">충돌 사고</h4>
             <div class="grid-container">
               <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_brick.gif"><p style="text-align: center;">벽돌</p></div>
               <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_pipe.gif"><p style="text-align: center;">파이프</p></div>
@@ -1086,16 +1087,17 @@
               <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_fence.gif"><p style="text-align: center;">철망 펜스</p></div>
             </div>
 
+            <h4 style="text-align: center;">추락 사고</h4>
+            <div class="grid-container">
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_ladder.gif"><p style="text-align: center;">사다리</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_scafold.gif"><p style="text-align: center;">임시 발판</p></div>
+            </div>
+
             <p>본 프로젝트에서는 자재 낙하로 인한 충돌 사고와 고층 높이에서 떨어지는 추락 사고를 구현하였습니다.</p>
             <p>충돌 사고를 재현하기 위해 충돌 객체: <strong>벽돌</strong>(brick), <strong>파이프</strong>(pipe), <strong>철 기둥</strong>(steel pillar), <strong>철망 펜스</strong>(wire fence) 4 가지를 캐릭터의 일정 높이 위에서 낙하 시켰습니다. 각각의 초기 무개는 5kg, 40kg, 60kg, 15kg로 설정하였습니다. </p>
             <p>추락 사고를 재현하기 위해 에이전트를 임시 발판과 사다리 위에 위치시킨 후, AddForce() 함수를 사용해 흉부 쪽으로 힘을 가해 밀쳐내는 방식을 사용했습니다. 이때 힘은 'impulse' 모드로 적용했습니다.</p>
             <p>일반 상황의 경우 30개의 일상 생활 관련 모션 에니메이션 클립을 사용하였습니다.</p>
             <br><br>
-
-            <div class="grid-container">
-              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_ladder.gif"><p style="text-align: center;">사다리</p></div>
-              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/AccidentDetection/construction_scafold.gif"><p style="text-align: center;">임시 발판</p></div>
-            </div>
 
             <h3>데이터 생성</h3>
             <!-- 여기에 시뮬레이션 GIF 넣기 -->
