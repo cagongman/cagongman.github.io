@@ -1,0 +1,139 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
+/**
+ * copyright 2022 @codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+  /**
+   * colors
+   */
+
+  /* gradient */
+
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(240, 1%, 25%) 3%,
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right,
+    hsla(240, 1%, 18%, 0.251) 0%,
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 16%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right,
+    hsl(38, 92%, 50%) 0%,
+    hsla(38, 92%, 50%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg,
+    hsla(38, 92%, 50%, 0.251) 0%,
+    hsla(38, 92%, 50%, 0) 59.86%
+  ), hsl(240, 2%, 16%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right,
+    hsl(0, 0%, 25%) 0%,
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right,
+    hsl(38, 92%, 60%),
+    hsl(38, 92%, 50%)
+  );
+
+  /* solid */
+
+  --jet: rgba(255, 255, 255, 0.07);
+  --onyx: hsl(240, 3%, 14%);
+  --eerie-black-1: hsl(240, 3%, 13%);
+  --eerie-black-2: #1A1A1A;
+  --smoky-black: #111111;
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(38, 92%, 50%);
+  --vegas-gold: hsl(38, 70%, 55%);
+  --light-gray: hsl(240, 5%, 82%);
+  --light-gray-70: hsla(240, 5%, 82%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  /* new design tokens */
+  --amber: hsl(38, 92%, 50%);
+  --amber-10: hsla(38, 92%, 50%, 0.10);
+  --amber-20: hsla(38, 92%, 50%, 0.20);
+  --amber-40: hsla(38, 92%, 50%, 0.40);
+  --zinc-800: #27272a;
+  --zinc-800-80: rgba(39, 39, 42, 0.8);
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-950: #09090b;
+
+  /**
+   * typography
+   */
+
+  /* font-family */
+  --ff-poppins: 'Poppins', sans-serif;
+
+  /* font-size */
+  --fs-1: 24px;
+  --fs-2: 18px;
+  --fs-3: 17px;
+  --fs-4: 16px;
+  --fs-5: 15px;
+  --fs-6: 14px;
+  --fs-7: 13px;
+  --fs-8: 11px;
+
+  /* font-weight */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+
+  /**
+   * border-radius
+   */
+
+  --radius-3xl: 24px;
+  --radius-2xl: 16px;
+  --radius-xl: 12px;
+  --radius-lg: 10px;
+
+  /**
+   * shadow
+   */
+
+  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.30);
+  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.30);
+  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.30);
+  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.20);
+  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.30);
+  --shadow-card: 0 20px 40px hsla(0, 0%, 0%, 0.25);
+
+  /**
+   * transition
+   */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease-in-out;
+
+}
+
+
+
+
+

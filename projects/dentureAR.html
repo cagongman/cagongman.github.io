@@ -1,0 +1,75 @@
+          <div class="dentureAR project-content" style="display: none;">
+            <h1>DentureAR</h1>
+            <br>
+            <h2>프로젝트 개요</h2>
+            <hr>
+            <div class="project-overview">
+              <p class="overview-lead">얼굴 트래킹 위에 3D 보철물을 실시간 정합해 보여주는 AR 시각화 시스템.</p>
+              <p>사용자가 보철물 장착 모습을 시술 전에 직관적으로 확인할 수 있도록, 얼굴 위에 가상 보철물을 미리 시각화하는 목적에서 시작한 프로젝트입니다.</p>
+              <p>의료 도메인의 프로젝트였지만, 실제 개발 과제는 AR 서비스의 핵심 문제인 "실시간 추적 결과 위에 가상 오브젝트를 얼마나 안정적으로 배치하고 자연스럽게 보여줄 수 있는가"를 해결하는 일이었습니다.</p>
+              <ul class="overview-highlights">
+                <li><strong>실시간 face mesh 생성</strong>: ARCore Augmented Face API로 468개 vertex 메쉬 구성.</li>
+                <li><strong>랜드마크 기반 위치 최적화</strong>: 얼굴 특징점을 이용한 보철물 정합과 좌표계 보정.</li>
+                <li><strong>수동 미세 조정 UX</strong>: 자동 정합 결과를 사용자가 보정할 수 있는 XR 인터랙션 제공.</li>
+              </ul>
+            </div>
+            <br>
+
+            <div class="project-content-box">
+              <h3>구성 인원</h3>
+              <p>-&emsp;경북대학교 영상처리 및 분석 연구실 - 학부연구생 1명 (본인)</p>
+              <p>-&emsp;경북대학교치과병원 치과보철과 - 박사 과정 1명</p>
+              <br>
+
+
+              <h3>시기 및 기간</h3>
+              <p>-&emsp;대학교 3학년 1학기 ~ 4학년 2학기 (IPA Lab 학부 연구생)</p>
+              <p>-&emsp;2020년 7월 ~ 2021년 12월</p>
+              <br>
+
+              <h3>타겟 플렛폼</h3>
+              <p>-&emsp;Android (Galaxy Tab)</p>
+              <br>
+
+              <h3>사용 기술</h3>
+              <span class="skill-type">C#</span>
+              <span class="skill-type">ARCore</span>
+              <span class="skill-type">Alglib</span>
+              <span class="skill-type">Unity3D</span>
+              <span class="skill-type">Visual Studio</span>
+              
+            </div>
+            <br>
+
+            <h2>구현 내용</h2>
+            <hr>
+            <h3><strong>얼굴 추적 위에 보철물을 정합하는 AR 파이프라인</strong></h3>
+            <p><img src="assets/images/projects/DentureAR/denture2.png" alt="DentureAR"></p>
+            <p>ARCore의 Augmented Face API를 사용해 얼굴을 인식하고, 468개 vertex로 구성된 face mesh를 생성했습니다. 이 mesh를 기준 좌표계로 삼아 얼굴 위에 3D 보철물을 배치하는 AR 시각화 흐름을 구현했습니다.</p>
+            <br>
+
+            <h3><strong>랜드마크 기반 위치 보정과 정합 최적화</strong></h3>
+            <p><img src="assets/images/projects/DentureAR/denture3.png" alt="DentureAR"></p>
+            <p>보철물과 얼굴의 대응 마커를 기준으로 위치와 회전을 보정해, 얼굴 위에 더 안정적으로 정합되도록 구성했습니다.</p>
+            <p>Levenberg-Marquardt algorithm(Alglib)으로 마커 간 오차를 줄여 정합을 시도했습니다.</p>
+            <br>
+
+            <h3><strong>수동 미세 조정</strong></h3>
+            <p><img src="assets/images/projects/DentureAR/dentalAR_inference.gif" alt="DentureAR"></p>
+            <p>자동 정합 결과만 제공하는 데서 끝나지 않고, 우측 하단 조작 버튼으로 위치와 각도를 미세 조정할 수 있도록 구현했습니다.</p>
+            <br><br>
+
+            <h2>회고 및 개선점</h2>
+            <hr>
+            <p>이 프로젝트는 의료 도메인 과제였지만, 개발 관점에서는 얼굴 추적 결과 위에 3D 오브젝트를 얼마나 안정적으로 정합하고 자연스럽게 보여줄 수 있는지에 집중했던 연구성 XR 프로젝트였습니다. 좌표계 보정, 랜드마크 매칭, 최적화를 하나의 파이프라인으로 연결해 본 경험 자체가 가장 큰 의미였습니다.</p>
+            <p>다만 지금 다시 보면 구현 구조는 다소 실험 코드에 가깝습니다. 씬 단위로 흐름이 세분화되어 있고 입력 처리나 조작 로직이 여러 컴포넌트에 분산되어 있어, 기능이 더 커질수록 재사용성과 유지보수성이 빠르게 떨어질 수 있는 구조였습니다.</p>
+            <p>알고리즘 측면에서도 좌표 정합과 회전 최적화는 동작했지만, 더 안정적인 수학적 표현과 필터링이 필요했습니다. 지금 다시 만든다면 Quaternion 기반 회전 처리, 트래킹 jitter 완화용 필터, 공통 제스처 컨트롤러 분리까지 함께 고려해 더 견고한 구조로 개선할 것입니다.</p>
+            <br><br>
+
+            <!-- <h3>참고 자료</h3>
+            <p><a href="https://youtu.be/XYGIu1xj8DY" target="_blank">실행 영상</a></p> -->
+            <br>
+            <br>
+
+            <button class="back-button">Back</button>
+          </div>

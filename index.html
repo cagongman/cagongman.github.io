@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=1250">
+  <title>Kisub-Cagongman Portfolio</title>
+
+  <link rel="shortcut icon" href="./assets/images/cagongman_logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <!-- Profile Card -->
+      <div class="sidebar-card sidebar-profile-card">
+        <figure class="avatar-box">
+          <img src="./assets/images/MyProfile.JPG" alt="Kisub Lee">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Kisub Lee" data-lang-key="name">이기섭</h1>
+          <p class="title" data-lang-key="title">게임 클라이언트 개발</p>
+        </div>
+      </div>
+
+      <!-- Contacts Card -->
+      <div class="sidebar-card sidebar-contacts-card">
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/icon/mail.svg" style="width: 55%;">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang-key="email">이메일</p>
+              <a href="mailto:cagongman@gmail.com" class="contact-link">cagongman@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/icon/phone.svg" style="width: 50%;">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang-key="phone">핸드폰</p>
+              <a href="tel:+821088795114" class="contact-link">+82 010-8879-5114</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <img src="assets/icon/calendar.svg" style="width: 50%;">
+            </div>
+            <div class="contact-info">
+              <p class="contact-title" data-lang-key="birth">생년월일</p>
+              <time datetime="1998-06-07" data-lang-key="birth_content">1998년 6월 7일</time>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #MAIN CONTENT
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-lang-key="about" data-nav-link>소개</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-lang-key="portfolio" data-nav-link>프로젝트</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-lang-key="resume" data-nav-link>이력서</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-lang-key="publication" data-nav-link>논문/수상</button>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!--
+        - #SECTIONS (injected by main.js)
+      -->
+
+      <div data-section="about"></div>
+      <div data-section="projects"></div>
+      <div data-section="resume"></div>
+      <div data-section="publication"></div>
+
+    </div>
+
+  </main>
+
+  <!--
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!--
+    - main js (Vite entry point)
+  -->
+  <script type="module" src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

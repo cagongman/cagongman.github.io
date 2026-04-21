@@ -1,0 +1,252 @@
+/* Publication */
+.notification {
+  color: var(--white-1);
+  font-size: var(--fs-5);
+  line-height: 1.5;
+  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
+}
+
+.papers {
+  margin-top: 2rem;
+  color: var(--light-gray); 
+}
+
+.papers h1 {
+  color: var(--amber);
+  font-family: var(--ff-poppins);
+  font-size: 2em;  /* Adjust the size as needed */
+  margin-bottom: 10px;
+}
+
+.papers h2, 
+.papers h3 {
+  color: var(--amber);
+  font-family: var(--ff-poppins);
+  margin-bottom: 5px;
+} 
+
+strong {
+  color: var(--amber);
+}
+
+
+.papers ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.papers li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color:var(--light-gray);
+}
+
+
+.yearly-papers {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.year {
+  flex: 0 0 70px; /* 연도의 너비를 고정 */
+  padding-right: 30px; /* 논문 리스트와의 간격 */
+}
+
+.papers-list {
+  flex: 1; /* 남은 공간을 차지 */
+}
+
+.papers-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.papers-list li {
+  margin-bottom: 15px;
+}
+
+.papers-list a {
+  display: inline-flex; /* 링크를 인라인 요소로 설정 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+
+
+.yearly-awards {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.awards-list {
+  flex: 1; /* 남은 공간을 차지 */
+}
+
+.awards-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.awards-list li {
+  margin-bottom: 10px;
+}
+
+
+.publication-type {
+    display: inline-block;
+    margin-left: 2px;
+    padding: 2px 8px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: bold; 
+    color: #333;
+}
+
+.publication-author1 {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 2px 5px;
+  background-color: rgb(255, 255, 128);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold; 
+  color: #333;
+}
+
+/* 학회명, 저자, 발표 색상 변경 */
+/* .conference {
+  background-color: #e3f2fd; 
+}
+.author {
+  background-color: #ffe0b2; 
+}
+.presentation-type {
+  background-color: #fff9c4; 
+} */
+
+
+
+
+.award-type-1 {
+  display: inline-block;
+  margin-left: 2px;
+  padding: 2px 8px;
+  background: linear-gradient(
+    170deg,
+    #fff0a0 0%,
+    #f5d76e 18%,
+    #d4a800 45%,
+    #e6b800 55%,
+    #a07800 80%,
+    #c9a227 100%
+  );
+  border: 1px solid #b8940a;
+  border-top-color: #ffe566;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #3a2b00;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 245, 160, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  cursor: default;
+}
+
+.award-type-1:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+  box-shadow: 0 3px 10px rgba(240, 200, 80, 0.55), 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 245, 160, 0.7);
+}
+
+.award-type-2 {
+  display: inline-block;
+  margin-left: 2px;
+  padding: 2px 8px;
+  background: linear-gradient(
+    170deg,
+    #ffffff 0%,
+    #e8e8e8 18%,
+    #aaaaaa 45%,
+    #c8c8c8 55%,
+    #888888 80%,
+    #b0b0b0 100%
+  );
+  border: 1px solid #909090;
+  border-top-color: #f0f0f0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  cursor: default;
+}
+
+.award-type-2:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+  box-shadow: 0 3px 10px rgba(200, 200, 200, 0.50), 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.award-type-3 {
+  display: inline-block;
+  margin-left: 2px;
+  padding: 2px 8px;
+  background: linear-gradient(
+    170deg,
+    #f0c090 0%,
+    #d49066 18%,
+    #8a4820 45%,
+    #b06a3b 55%,
+    #6a3818 80%,
+    #9a6030 100%
+  );
+  border: 1px solid #7a4820;
+  border-top-color: #e8a870;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #f5e6d8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 210, 170, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  cursor: default;
+}
+
+.award-type-3:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+  box-shadow: 0 3px 10px rgba(200, 130, 80, 0.55), 0 2px 4px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 210, 170, 0.6);
+}
+
+.conference-name, .journal-name, .degree-name {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 0.875rem;
+    color: var(--light-gray);
+}
+
+
+.link-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px; /* 아이콘과 텍스트 사이 간격 */
+  color: white; /* 아이콘 색상 */
+}
+
+.link-icon ion-icon {
+  font-size: 1em; /* 아이콘 크기 조절 */
+  color: white; /* 아이콘 색상 */
+}
+
+
+ion-icon {
+  pointer-events: none;
+ }
+
+ .last-update {
+  text-align: center;
+  font-size: var(--fs-5);
+  color: hsl(0, 0%, 60%);
+  margin-top: 16px;
+}

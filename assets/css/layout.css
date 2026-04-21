@@ -1,0 +1,43 @@
+/*-----------------------------------*\
+  #MAIN LAYOUT
+\*-----------------------------------*/
+
+main {
+  max-width: 1200px;
+  min-width: 1250px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 32px 32px 60px;
+}
+
+.sidebar {
+  width: 300px;
+  min-width: 300px;
+  position: sticky;
+  top: 32px;
+  align-self: flex-start;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+article {
+  width: auto;
+  min-height: 100%;
+  margin-inline: 0;
+}
+
+[data-section] {
+  display: contents;
+}

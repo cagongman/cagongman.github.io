@@ -1,0 +1,57 @@
+          <!-- <div class="system project-content" style="display: none;">
+            <h1>경찰과 도둑</h1>
+            <br>
+            <h2>프로젝트 개요</h2>
+            <hr>
+            <p>
+              거리에 무분별하게 버려진 쓰레기와 지정된 수거함을 찾기 어려운 문제를 해결하기 위해, 쓰레기통 위치와 올바른 폐기법을 알려주는 서비스 '에코빈'을 개발하게 되었습니다.
+            </p>
+            <p>
+              이 서비스는 시민들이 올바른 쓰레기 처리를 쉽게 할 수 있도록 돕는 것을 목표로 합니다.
+            </p>
+            <br>
+
+            <div class="project-content-box">
+              <h3>구성 인원</h3>
+              <p>개인 참여</p>
+              <br>
+
+              <h3>담당 역할</h3>
+              <p>- 쓰레기통 위치 데이터 전처리 및 시각화</p>
+              <p>- 사용자 현재 위치 추적 및 시각화</p>
+              <br>
+
+              <h3>시기 및 기간</h3>
+              <p>- 대학교 3학년 2학기</p>
+              <p>- 2020년 10월 ~ 2020년 11월</p>
+              <br>
+
+              <h3>사용 기술 및 라이브러리</h3>
+              <span class="skill-type">Python</span>
+              <span class="skill-type">numpy</span>
+              <span class="skill-type">pandas</span>
+              <span class="skill-type">matplotlib</span>
+              <span class="skill-type">seaborn</span>
+              <span class="skill-type">sklearn</span>
+              <span class="skill-type">Jupyter Notebook</span>
+              <br><br>
+
+              <h3>첨부자료 링크</h3>
+              <p><a href="./assets/AI_Contest_final_submission.html" target="_blank">Code</a></p>
+            </div>
+            <br>
+
+            <h2>상세 내용</h2>
+            <hr>
+            <p>공공데이터포털에서 대구 중구 쓰레기통 설치 현황 데이터와 폐건전지 , 폐형광등 분리수거함 위치 데이터를 가져와 사용했습니다.</p> 
+            <p>위의 데이터는 지번 주소 또는 장소 이름으로 저장되어 있기때문에 Google Geocode API를 사용하여 경도, 위도 좌표로 변환해 주었습니다.</p>
+            <br>
+            <p><img src="assets/images/projects/Ecobin/ecobin1.png" alt="Ecobin"></p>
+            <br>
+            <p>MapKit API를 통해 생성된 지도에 변환한 좌표(경도, 위도)를 건전지, 형광등, 일반쓰레기 카테고리별로 나누어 marker를 추가해 시각화 하였습니다.</p>
+            <p>CoreLocation API를 사용하여 추출한 현재 사용자 위치를 중심으로 메인 화면에 지도를 표시하였습니다.</p>
+            <br>
+            <br>
+
+            <button class="back-button">Back</button>
+          </div>

@@ -1,0 +1,103 @@
+          <div class="oreh project-content" style="display: none;">
+            <h1>OREH : '황기환' 그의 귀환 야외형 미션추리게임</h1>
+            <br>
+            <h2>프로젝트 개요</h2>
+            <hr>
+            <div class="project-overview">
+              <p class="overview-lead">1919년 파리위원부 서기장 황기환의 외교 활동을 모티브로, 실제 장소를 이동하며 스토리를 해금하고 미션을 해결하는 야외형 미션 추리 게임.</p>
+              <p>플레이어는 황기환이 되어 외교 문서를 해독하며 역사를 체험하게 됩니다. 각 스테이지는 <strong>스토리 → 퀴즈</strong> 흐름으로 구성됩니다.</p>
+              <p>Unity 기반 모바일 클라이언트에서 스토리 연출, 이미지 인식 기반 미션 활성화, 퍼즐 해결을 하나의 플레이 루프로 엮었습니다. 교육용 콘텐츠라는 주제 위에 게임 클라이언트의 연출 흐름과 상호작용 제어 경험을 녹여낸 프로젝트입니다.</p>
+              <ul class="overview-highlights">
+                <li><strong>스토리 중심 진행 구조</strong>: 편지, 퀴즈, AR 미션이 순차적으로 이어지는 야외형 플레이 흐름 구성.</li>
+                <li><strong>이미지 인식 기반 미션 트리거</strong>: 이미지 인식을 실제 게임 진행과 연결해 현장 체험형 상호작용 구현.</li>
+                <li><strong>플레이 기록 관리</strong>: Firebase 기반으로 계정과 진행 상태를 저장해 이어하기가 가능하도록 구성.</li>
+              </ul>
+            </div>
+            <br>
+
+            <div class="project-content-box">
+              <h3>구성 인원</h3>
+              <p>-&emsp;개발 : 1명 (본인)&emsp;디자인/기획 : 5명</p>
+              <br>
+
+
+              <h3>시기 및 기간</h3>
+              <p>-&emsp;2023년 2월 ~ 2023년 6월</p>
+              <br>
+
+              <h3>타겟 플렛폼</h3>
+              <p>-&emsp;Android</p>
+              <p>-&emsp;iOS</p>
+              <br>
+
+              <h3>사용 기술</h3>
+              <span class="skill-type">C#</span>
+              <span class="skill-type">AR Foundation</span>
+              <span class="skill-type">Firebase</span>
+              <span class="skill-type">Unity3D</span>
+              <span class="skill-type">Visual Studio</span>
+              <br>
+              <br>
+
+              <h3>참고 자료</h3>
+              <div class="project-paper-entry">
+                <a href="https://tumblbug.com/oreh___oreh" class="project-paper-link" target="_blank" rel="noopener noreferrer">
+                  <div class="project-paper-body">
+                    <span class="project-paper-title">텀블벅 펀딩 페이지</span>
+                    <span class="project-paper-meta">
+                      <span class="project-paper-badge">OREH</span>
+                      <span class="project-paper-badge">텀블벅</span>
+                    </span>
+                  </div>
+                  <img src="assets/icon/link.svg" alt="link" class="project-paper-icon">
+                </a>
+              </div>
+
+            </div>
+            <br>
+
+            <h2>구현 내용</h2>
+            <hr>
+            <h3><strong>진행 상태 저장과 계정 연동</strong></h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/OREH/oreh-login.png" class="centered-image">
+            </div>
+            <p>Firebase Realtime Database를 활용해 회원가입, 로그인, 사용자 데이터 저장 기능을 구현했습니다. 이 프로젝트의 로그인은 강한 인증보다는 사용자를 구분하고 진행 상태를 이어서 불러오기 위한 목적에 가까웠고, 프로토타입 단계에서는 사용자가 편하게 접근할 수 있는 흐름을 우선해 비교적 단순한 계정 구조로 구성했습니다.</p>
+            <br><br>
+
+            <h3><strong>오프라인 키트와 연결되는 콘텐츠 구조</strong></h3>
+            <div class="centered-image-container">
+              <img src="assets/images/projects/OREH/oreh-kit.png" class="centered-image">
+            </div>
+            <p>이 프로젝트는 앱만으로 진행되는 게임이 아니라, 제공된 편지와 미션지를 함께 활용하는 체험형 콘텐츠입니다. 플레이어는 키트 안의 단서와 모바일 화면의 정보를 조합해 다음 스테이지를 해금하게 됩니다.</p>
+            <br><br>
+
+            <h3><strong>스토리 연출과 미션 흐름</strong></h3>
+            <div class="grid-container" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/OREH/oreh_problem1.gif"><p style="text-align: center;">이미지 인식 문제</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/OREH/oreh_problem2.gif"><p style="text-align: center;">추리 문제</p></div>
+              <div class="grid-item"><img style="margin-bottom: 3px;" src="assets/images/projects/OREH/oreh_problem3.gif"><p style="text-align: center;">퍼즐 문제</p></div>
+            </div>
+            <p>스토리 구간 이후에는 이미지 인식 및 퍼즐 문제가 이어집니다.</p>
+            <p>이미지 인식은 AR Foundation의 이미지 트래킹을 사용했고, 필요한 시점에만 AR 기능을 활성화해 미션 트리거로 연결했습니다.</p>
+            <br><br>
+
+            <h3><strong>플레이 데이터 수집과 운영 결과</strong></h3>
+            <!-- <div class="centered-image-container">
+              <img src="assets/images/projects/OREH/oreh-data.png" class="centered-image">
+            </div> -->
+            <p>플레이 중에는 진행 날짜, 미션별 소요 시간, 전체 플레이 시간을 기록했고, 종료 후에는 자유 의견과 리뷰 점수를 함께 저장했습니다.</p>
+            <p>실제로 총 38팀이 게임을 완료했고 평균 리뷰 점수는 <strong>4.27</strong>, 평균 플레이 시간은 <strong>84분</strong>이었습니다.</p>
+            <br><br>
+
+            <h2>회고 및 개선점</h2>
+            <hr>
+            <p>이 프로젝트는 이미지 인식 기반 체험형 콘텐츠를 실제로 완성하고 출시까지 이어가며, 구현 이후의 운영 단계까지 경험해 본 프로젝트라는 점에서 의미가 있었습니다.</p>
+            <p>특히 출시 후 이미지 인식이 실패했을 때 사용자가 다음 단계를 진행하지 못하는 문제가 실제 운영 이슈로 이어졌고, 이를 대응하면서 기능 구현 자체보다도 예외 상황을 포함한 전체 플레이 흐름 설계가 중요하다는 점을 배울 수 있었습니다.</p>
+            <p>지금 다시 보면 구조적으로도 아쉬운 점이 분명합니다. 사용자 구분과 진행 저장을 빠르게 구성하는 데에는 성공했지만, 일부 로직이 UI 계층에 하드코딩되어 있어 기능이 늘어날수록 유지보수가 어려워질 수 있는 구조였습니다.</p>
+            <p>또한 스테이지 확장을 고려해 데이터를 분리했음에도, 실제로는 스토리 출력, 퀴즈 판정, 이미지 인식 성공 여부, 다음 단계 해금 같은 흐름 제어가 UI 코드에 함께 섞여 있었습니다.</p>
+            <p>지금 다시 만든다면 스토리 / 퀴즈 / 이미지 인식 진행은 <code>State 패턴</code>으로 분리해 상태 전이를 명확히 하고, 정답 판정이나 우회 진행 같은 규칙은 <code>Strategy 패턴</code>으로 나눠 UI가 규칙 자체를 직접 들고 있지 않도록 구성할 것입니다. 그렇게 해야 새로운 스테이지나 예외 흐름이 추가되어도 화면 코드를 계속 수정하지 않고 더 안정적으로 확장할 수 있다고 생각합니다.</p>
+            <br><br>
+
+            <button class="back-button">Back</button>
+          </div>
